@@ -1,0 +1,75 @@
+.pricing-table {
+  text-align: center;
+}
+
+.pricing-table__item {
+  max-width: 380px;
+  display: inline-block;
+  .card();
+}
+
+.pricing-table__header {
+  padding: 45px 10px 35px;
+  color: @mae-lighter;
+  position: relative;
+
+  & > h2 {
+    margin: 0;
+    line-height: 100%;
+    color: @mae-lighter;
+    font-weight: 100;
+    font-size: 50px;
+
+    small {
+      color: @mae-lightest;
+      letter-spacing: 0;
+      vertical-align: top;
+      font-size: 16px;
+      font-weight: 100;
+    }
+  }
+}
+
+.pricing-table__name {
+  background-color: rgba(57, 70, 80, 0.3);
+  padding: 15px 10px;
+  text-transform: uppercase;
+  color: @mae-lighter;
+  margin-bottom: 20px;
+}
+
+.pricing-table__body {
+  padding: 0 23px;
+}
+
+.pricing-table__list {
+  padding: 15px 0;
+  font-weight: 400;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid darken(@input-border, 2%);
+  }
+}
+
+.pricing-table__footer {
+  padding: 10px 20px 30px;
+  margin-top: 20px;
+
+  & > a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: @mae-light;
+    background-color: @mae-muted;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 25px;
+    .transition(all);
+    .transition-duration(300ms);
+
+    &:hover {
+      .opacity(0.85);
+    }
+  }
+}

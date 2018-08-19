@@ -1,0 +1,40 @@
+/* Custom MAE style alert */
+.alert--dark {
+    .alert-variant(#394650; #394650; @mae-light);
+}
+
+.alert--light {
+    .alert-variant(@mae-lighter; @mae-lighter; @mae-dark);
+}
+
+/* Close Icon */
+.alert {
+    width: auto;
+
+    .close {
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        .opacity(1);
+        line-height: 20px;
+        font-size: 14px;
+        top: -1px;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+        }
+    }
+}
+
+.alert--light .close {
+    color: @mae-dark;
+    background: rgba(0, 0, 0, 0.06);
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.1);
+        color: @mae-darker;
+    }
+}
+

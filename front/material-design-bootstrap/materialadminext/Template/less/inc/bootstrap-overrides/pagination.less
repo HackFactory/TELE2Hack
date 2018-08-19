@@ -1,0 +1,38 @@
+.pagination {
+    border-radius: 0;
+    
+    & > li {
+        margin: 0 2px;
+        display: inline-block;
+        vertical-align: top;
+        
+        & > a,
+        & > span {
+            border-radius: 50% !important;
+            padding: 0;
+            width: 35px;
+            height: 35px;
+            line-height: 33px;
+            text-align: center;
+            font-size: 14px;
+            z-index: 1;
+            position: relative;
+            cursor: pointer;
+            .transition(all);
+            .transition-duration(300ms);
+            
+            & > .zmdi {
+                font-size: 15px;
+            }
+        }
+         
+        &.disabled {
+            .opacity(0.4);
+        }  
+    }
+}
+
+.pagination--alt {
+    text-align: center;
+    width: 100%;
+}

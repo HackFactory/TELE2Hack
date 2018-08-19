@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Admin Extended Dark</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <body>
+        <header id="header">
+    <div class="header__logo">Material Admin Extended Dark</div>
+
+    <div class="header__links">
+        <a href="">Demo</a>
+        <a href="">Purchase</a>
+    </div>
+</header>
+
+        <main id="main">
+            <aside id="sidebar" data-spy="affix" data-offset-top="72">
+    <ul class="sidebar__links">
+        <li>
+            <span class="sidebar__title">Getting Started</span>
+            <ul>
+                <li><a href="index.html#getting-started">What's Included</a></li>
+                <li><a href="index.html#css-name">CSS Naming Conventions</a></li>
+                <li><a href="index.html#compiling-css-js">Compiling CSS and JavaScript</a></li>
+                <li><a href="index.html#using-less">Using LESS</a></li>
+                <li><a href="index.html#third-party-vendors">Third Party Vendors</a></li>
+                <li><a href="index.html#basic-template">Basic Template</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Tables</span>
+            <ul>
+                <li><a href="tables.html">Normal Tables</a></li>
+                <li><a href="data-tables.html">Data Tables</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Form</span>
+            <ul>
+                <li><a href="form-elements.html">Form Groups & Elements</a></li>
+                <li><a href="form-components.html">Form Components</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">User Interface</span>
+            <ul>
+                <li><a href="animations.html">CSS Animations</a></li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="icons.html">Icons</a></li>
+                <li><a href="preloaders.html">Preloaders</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="dialogs.html">Dialogs</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Components</span>
+            <ul>
+                <li><a href="dropdown.html">Dropdown</a></li>
+                <li><a href="modal.html">Modal</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+                <li><a href="collapse.html">Collapse</a></li>
+                <li><a href="tooltips-popovers.html">Tooltips and Popovers</a></li>
+                <li><a href="progress-bar.html">Progress Bar</a></li>
+                <li><a href="pagination.html">Pagination</a></li>
+                <li><a href="media-object.html">Media Objects</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Charts</span>
+            <ul>
+                <li><a href="flot-charts.html">Flot Charts</a></li>
+                <li><a href="sparkline.html">Sparkline Charts</a></li>
+                <li><a href="easypie.html">EasyPie Charts</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Photo Gallery</span>
+            <ul>
+                <li><a href="photos.html">Default</a></li>
+                <li><a href="photos-timeline.html">Timeline</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="calendar.html">Calendar</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">CSS</span>
+
+            <ul>
+                <li><a href="css.html#containers">Containers</a></li>
+                <li><a href="css.html#page-headers">Page Headers</a></li>
+                <li><a href="css.html#action-icons">Action Icons</a></li>
+                <li><a href="css.html#cards">Cards</a></li>
+                <li><a href="css.html#list-groups">List Groups</a></li>
+                <li><a href="generic-classes.html">Generic Classes</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Site Components and Features</span>
+
+            <ul>
+                <li><a href="site-components.html#toggleable-blocks">Toggleable Blocks</a></li>
+                <li><a href="site-components.html#js-actions">Javascript Actions</a></li>
+                <li><a href="site-components.html#salvatore">Salvatore Masonry Grids</a></li>
+            </ul>
+        </li>
+    </ul>
+</aside>
+
+            <section id="content">
+                <div class="content__wrapper">
+                    <div class="content__title">
+                        <h2>Form Groups and Elements</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__title">
+                            <h2>Form Groups</h2>
+                        </div>
+
+                        <p>Form Group is used to wrap input elements such as input texts, textareas and selects in order to add extra styling. Form Group can be also used with third party
+                            <a href="form-components.html">form components</a> such as select2, noUislider or any other form related elements.</p>
+
+                        <p>Basic Example:</p>
+
+                        <div class="card__demo card__demo--light">
+                            <pre><code class="language-html">&#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22;&#x3E;
+    &#x3C;i class=&#x22;form-group__bar&#x22;&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">Form Group modifier classes.</h4>
+                        <p>You can use the following form group modifier classes for each given cases.</p>
+
+                        <ol>
+                            <li>
+                                <p><code>.form-group--float</code>: Floating label on focus for input text and textarea fields.</p>
+
+                                <div class="card__demo">
+                                    <img src="img/form/float.gif" width="320" alt="">
+
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;form-group form-group--float&#x22;&#x3E;
+    &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; placeholder=&#x22;Name&#x22;&#x3E;
+
+    &#x3C;label&#x3E;Name&#x3C;/label&#x3E;
+
+    &#x3C;i class=&#x22;form-group__bar&#x22;&#x3E;&#x3C;/i&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+
+                                <br><br>
+                            </li>
+
+                            <li>
+                                <p><code>.form-group--centered</code>: Center aligned texts.</p>
+
+                                <div class="card__demo card__demo--light">
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;form-group form-group--centered&#x22;&#x3E;
+    ...
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+                                <br><br>
+                            </li>
+
+                            <li>
+                                <p><code>.form-group--active</code>: Shows white bar beneath the text field.</p>
+
+                                <div class="card__demo card__demo--light">
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;form-group form-group--active&#x22;&#x3E;
+    ...
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+                                <br><br>
+                            </li>
+
+                            <li>
+                                <p><code>.form-group--light</code>: Used for darker backgrounds.</p>
+                                <div class="card__demo card__demo--light">
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;form-group form-group--light&#x22;&#x3E;
+    ...
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+                                <br><br>
+                            </li>
+
+                            <li>
+                                <p><code>.form-group--select</code>: Used for selects.</p>
+
+                                <div class="card__demo">
+                                    <p><img class="img-thumbnail" src="img/form/select.jpg" alt=""></p>
+
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;form-group form-group--range&#x22;&#x3E;
+    ...
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__title">
+                            <h2>Input Text</h2>
+                        </div>
+
+                        <p>Text Inputs with different sizes by height.</p>
+                        
+                        <div class="card__demo">
+                            <img src="img/form/basic.gif" alt="">
+
+                            <pre><code class="language-html">&#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control input-sm&#x22; placeholder=&#x22;Input Small&#x22;&#x3E;
+    &#x3C;i class=&#x22;form-group__bar&#x22;&#x3E;&#x3C;/i&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; placeholder=&#x22;Input Default&#x22;&#x3E;
+    &#x3C;i class=&#x22;form-group__bar&#x22;&#x3E;&#x3C;/i&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control input-lg&#x22; placeholder=&#x22;Input Large&#x22;&#x3E;
+    &#x3C;i class=&#x22;form-group__bar&#x22;&#x3E;&#x3C;/i&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <br><br>
+
+                        <p>Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths.</p>
+
+                        <div class="card__demo">
+                            <img src="img/form/input-text-column.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;div class=&#x22;row&#x22;&#x3E;
+  &#x3C;div class=&#x22;col-xs-2&#x22;&#x3E;
+    &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+        &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; placeholder=&#x22;col-xs-2&#x22;&#x3E;
+        &#x3C;i class=&#x22;form-group__bar&#x22;&#x3E;&#x3C;/i&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div class=&#x22;col-xs-3&#x22;&#x3E;
+    &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+        &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; placeholder=&#x22;col-xs-3&#x22;&#x3E;
+        &#x3C;i class=&#x22;form-group__bar&#x22;&#x3E;&#x3C;/i&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+
+  &#x3C;div class=&#x22;col-xs-4&#x22;&#x3E;
+    &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+        &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22; placeholder=&#x22;col-xs-4&#x22;&#x3E;
+        &#x3C;i class=&#x22;form-group__bar&#x22;&#x3E;&#x3C;/i&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__title">
+                            <h2>Textarea</h2>
+                        </div>
+
+                        <p>Form control which supports multiple lines of text. Change 'rows' attribute as necessary.</p>
+
+                        <div class="card__demo">
+                            <img src="img/form/textarea.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;textarea class=&#x22;form-control&#x22; rows=&#x22;5&#x22; placeholder=&#x22;Let us type some lorem ipsum....&#x22;&#x3E;&#x3C;/textarea&#x3E;
+    &#x3C;i class=&#x22;form-group__bar&#x22;&#x3E;&#x3C;/i&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">Auto Height Textarea</h4>
+                        <p>Auto height growing textarea is made possible using the awesome plugin <a target="_blank" href="http://www.jacklmoore.com/autosize/">http://www.jacklmoore.com/autosize/</a>. Make sure to include autosize javascript library as mentioned below before using this plugin on any textarea elements.</p>
+
+                        <div class="card__demo">
+                            <img src="img/form/textarea-size.gif" alt="">
+
+                            <ul class="tab-nav tab-nav--justified">
+                                <li class="active"><a href="#textarea-size-dep" data-toggle="tab">Dependencies</a></li>
+                                <li><a href="#textarea-size-html" data-toggle="tab">HTML</a></li>
+                                <li><a href="#textarea-size-js" data-toggle="tab">Javascript</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="textarea-size-dep">
+                                    <pre><code class="language-html">// Auto Size Library
+&#x3C;script src=&#x22;vendors/bower_components/autosize/dist/autosize.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+
+// Site Functions &#x26; Actions
+&#x3C;script src=&#x22;js/app.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</code></pre>
+                                </div>
+                                <div class="tab-pane" id="textarea-size-html">
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;form-group&#x22;&#x3E;
+    &#x3C;textarea class=&#x22;form-control textarea-autosize&#x22; placeholder=&#x22;Start pressing Enter to see growing...&#x22;&#x3E;&#x3C;/textarea&#x3E;
+    &#x3C;i class=&#x22;form-group__bar&#x22;&#x3E;&#x3C;/i&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+                                <div class="tab-pane" id="textarea-size-js">
+                                    <pre><code class="language-js">// Please note that this funtion is already included in js/app.min.js(from js/inc/funtions.js) thus you don't to add this again.
+
+autosize($(&#x27;.textarea-autosize&#x27;));</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__title">
+                            <h2>Selects</h2>
+                        </div>
+
+                        <p>Use the default option, or add multiple to show multiple options at once.</p>
+
+                        <div class="card__demo">
+                            <img src="img/form/select.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;div class=&#x22;form-group form-group--select&#x22;&#x3E;
+    &#x3C;select class=&#x22;form-control&#x22;&#x3E;
+        &#x3C;option&#x3E;Select an Option&#x3C;/option&#x3E;
+        &#x3C;option&#x3E;Option 1&#x3C;/option&#x3E;
+        &#x3C;option&#x3E;Option 2&#x3C;/option&#x3E;
+        &#x3C;option&#x3E;Option 3&#x3C;/option&#x3E;
+        &#x3C;option&#x3E;Option 4&#x3C;/option&#x3E;
+        &#x3C;option&#x3E;Option 5&#x3C;/option&#x3E;
+    &#x3C;/select&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__title">
+                            <h2>Checkboxes and Radios</h2>
+                        </div>
+
+                        <p>Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
+                        
+                        <div class="card__demo">
+                            <img src="img/checkbox-radio/basic.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;!-- Checkboxes --&#x3E;
+
+&#x3C;!-- Default --&#x3E;
+&#x3C;div class=&#x22;checkbox&#x22;&#x3E;
+    &#x3C;label&#x3E;
+        &#x3C;input type=&#x22;checkbox&#x22; value=&#x22;&#x22;&#x3E;
+        &#x3C;i class=&#x22;input-helper&#x22;&#x3E;&#x3C;/i&#x3E;
+        Option one is this and that-be sure to include why it&#x27;s great
+    &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Disabled --&#x3E;
+&#x3C;div class=&#x22;checkbox disabled&#x22;&#x3E;
+    &#x3C;label&#x3E;
+        &#x3C;input type=&#x22;checkbox&#x22; value=&#x22;&#x22; disabled=&#x22;&#x22;&#x3E;
+        &#x3C;i class=&#x22;input-helper&#x22;&#x3E;&#x3C;/i&#x3E;
+        Option two is disabled
+    &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;
+
+
+&#x3C;!-- Radio --&#x3E;
+
+&#x3C;!-- Default --&#x3E;
+&#x3C;div class=&#x22;radio&#x22;&#x3E;
+    &#x3C;label&#x3E;
+        &#x3C;input type=&#x22;radio&#x22; name=&#x22;sample&#x22; value=&#x22;&#x22;&#x3E;
+        &#x3C;i class=&#x22;input-helper&#x22;&#x3E;&#x3C;/i&#x3E;
+        Option one is this and that-be sure to include why it&#x27;s great
+    &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Disabled --&#x3E;
+&#x3C;div class=&#x22;radio&#x22;&#x3E;
+    &#x3C;label&#x3E;
+        &#x3C;input type=&#x22;radio&#x22; name=&#x22;sample&#x22; value=&#x22;&#x22;&#x3E;
+        &#x3C;i class=&#x22;input-helper&#x22;&#x3E;&#x3C;/i&#x3E;
+        Option two can be something else and selecting it will deselect option one
+    &#x3C;/label&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                            </div>
+
+                        <br><br>
+
+                        <p>Inline Checkboxes and Radios.</p>
+
+                        <div class="card__demo">
+                            <img src="img/checkbox-radio/inline.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;!-- checkboxes --&#x3E;
+&#x3C;label class=&#x22;checkbox-inline&#x22;&#x3E;
+    &#x3C;input type=&#x22;checkbox&#x22; value=&#x22;option1&#x22;&#x3E;
+    &#x3C;i class=&#x22;input-helper&#x22;&#x3E;&#x3C;/i&#x3E;
+    1
+&#x3C;/label&#x3E;
+&#x3C;label class=&#x22;checkbox-inline&#x22;&#x3E;
+    &#x3C;input type=&#x22;checkbox&#x22; value=&#x22;option2&#x22;&#x3E;
+    &#x3C;i class=&#x22;input-helper&#x22;&#x3E;&#x3C;/i&#x3E;
+    2
+&#x3C;/label&#x3E;
+&#x3C;label class=&#x22;checkbox-inline&#x22;&#x3E;
+    &#x3C;input type=&#x22;checkbox&#x22; value=&#x22;option3&#x22;&#x3E;
+    &#x3C;i class=&#x22;input-helper&#x22;&#x3E;&#x3C;/i&#x3E;
+    3
+&#x3C;/label&#x3E;
+
+
+&#x3C;!-- Radios --&#x3E;
+&#x3C;label class=&#x22;radio-inline&#x22;&#x3E;
+    &#x3C;input type=&#x22;radio&#x22; name=&#x22;inlineRadioOptions&#x22; value=&#x22;option1&#x22;&#x3E;
+    &#x3C;i class=&#x22;input-helper&#x22;&#x3E;&#x3C;/i&#x3E;
+    1
+&#x3C;/label&#x3E;
+
+&#x3C;label class=&#x22;radio-inline&#x22;&#x3E;
+    &#x3C;input type=&#x22;radio&#x22; name=&#x22;inlineRadioOptions&#x22; value=&#x22;option2&#x22;&#x3E;
+    &#x3C;i class=&#x22;input-helper&#x22;&#x3E;&#x3C;/i&#x3E;
+    2
+&#x3C;/label&#x3E;
+
+&#x3C;label class=&#x22;radio-inline&#x22;&#x3E;
+    &#x3C;input type=&#x22;radio&#x22; name=&#x22;inlineRadioOptions&#x22; value=&#x22;option3&#x22;&#x3E;
+    &#x3C;i class=&#x22;input-helper&#x22;&#x3E;&#x3C;/i&#x3E;
+    3
+&#x3C;/label&#x3E;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/functions.js"></script>
+    </body>
+</html>

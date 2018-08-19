@@ -1,0 +1,84 @@
+.carousel-control {
+    .transition(all);
+    .transition-duration(300ms);
+
+
+    .zmdi {
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+    }
+}
+
+.carousel-caption,
+.carousel-indicators {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0;
+}
+
+.carousel-caption {
+    @media(min-width: @screen-sm-min) {
+        border-radius: 2px;
+
+        & > h3,
+        & > p {
+            .text-overflow();
+        }
+
+        & > h3 {
+            margin: 0;
+            font-weight: normal;
+            color: @m-white;
+        }
+
+        & > p {
+            margin-top: 5px;
+        }
+    }
+
+    @media(max-width: @screen-xs-max) {
+        display: none;
+    }
+}
+
+.carousel-indicators {
+    padding: 6px 5px 5px 5px;
+
+    & > li {
+        background-color: rgba(255,255,255,0.4);
+        position: relative;
+        border: 0;
+
+        &:before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: @m-white;
+            border: 1px solid @m-white;
+            bottom: -13px;
+            left: 0;
+            .opacity(0);
+            border-radius: 50%;
+            position: absolute;
+            .transition(all);
+            .transition-duration(300ms);
+        }
+
+        &.active {
+            width: 10px;
+            height: 10px;
+            margin: 1px;
+
+            &:before {
+                bottom: 0;
+                .opacity(1);
+            }
+        }
+
+    }
+}

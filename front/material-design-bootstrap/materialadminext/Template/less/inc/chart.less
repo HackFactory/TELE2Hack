@@ -1,0 +1,106 @@
+// Easy Pie Charts
+.chart-pie {
+    display: inline-block;
+    position: relative;
+}
+
+.chart-pie__value {
+    position: absolute;
+    color: @mae-light;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+    &:after {
+        content: "%";
+        font-size: 12px;
+    }
+}
+
+
+//Flot Chart
+.flot-chart {
+    &:not(.flot-chart--sm):not(.flot-chart--lg) {
+        height: 200px;
+    }
+}
+
+.flot-chart-edge {
+    overflow: hidden;
+
+    .flot-chart {
+        margin: 0 -10px 0;
+        position: relative;
+        bottom: -9px;
+    }
+}
+
+.flot-chart--sm {
+    height: 100px;
+}
+
+.flot-chart--lg {
+    height: 300px;
+}
+
+.flot-tooltip {
+    position: absolute;
+    color: @mae-light;
+    display: none;
+    font-size: 12px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    padding: 5px 10px;
+    background-color: @mae-darker;
+    z-index: 99999;
+    border-radius: 2px;
+}
+
+.flot-chart-legend {
+    text-align: center;
+    margin: 10px 0 5px;
+
+    table {
+        display: inline-block;
+    }
+
+    .legendColorBox {
+        & > div {
+            border: 0 !important;
+
+            & > div {
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .legendLabel {
+        padding: 0 8px 0 3px;
+        color: @text-color;
+    }
+}
+
+
+//Sparkline Charts
+#jqstooltip {
+    min-width: 21px;
+    min-height: 23px;
+    border: 0;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 2px;
+
+    .jqsfield {
+        font-size: 12px;
+        font-family: inherit;
+        text-align: center;
+        color: #333;
+
+        & > span {
+            display: none;
+        }
+    }
+}
+
+    

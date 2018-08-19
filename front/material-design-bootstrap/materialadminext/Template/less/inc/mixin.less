@@ -1,0 +1,212 @@
+// Font Face
+.font-face(@family, @name, @weight: 300, @style){
+    @font-face{
+        font-family: @family;
+        //src:url('../fonts/@{family}/@{name}.eot');
+        src://url('../fonts/@{family}/@{name}.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/@{family}/@{name}.woff') format('woff'),
+            //url('../fonts/@{family}/@{name}.ttf') format('truetype'),
+            url('../fonts/@{family}/@{name}.svg#icon') format('svg');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
+
+// Background Repeat + Position
+.bg-option(@repeat: no-repeat, @position: center) {
+    background-repeat: @repeat;
+    background-position: @position;
+}
+
+//  CSS Animations based on animate.css
+.animated(@name, @duration) {
+    -webkit-animation-name: @name;
+    animation-name: @name;
+    -webkit-animation-duration: @duration;
+    animation-duration: @duration;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+// CSS Transform - Scale and Rotate
+.scale-rotate(@scale, @rotate) {
+    -webkit-transform: scale(@scale) rotate(@rotate);
+    -ms-transform: scale(@scale) rotate(@rotate);
+    -o-transform: scale(@scale) rotate(@rotate);
+    transform: scale(@scale) rotate(@rotate);
+}
+
+// User Select
+.user-select (@val) {
+    -webkit-touch-callout:  @val;
+    -webkit-user-select:    @val;
+    -khtml-user-select:     @val;
+    -moz-user-select:       @val;
+    -ms-user-select:        @val;
+    user-select:            @val;
+}
+
+// Background Image Cover
+.bg-cover(@image) {
+    background-image: url(@image);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-cover-inline() {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+// Tab Focus(override)
+.tab-focus() {
+    outline: none !important;
+}
+
+
+// Scale 3d
+.scale3d(...) {
+  @process: ~`(function(e){return e=e||"1, 1, 1"})((function(){var e="@{arguments}";return e=e.replace(/^\[|\]$/g,"")})())`;
+  -webkit-transform: scale3d(@process);
+  -moz-transform: scale3d(@process);
+  -ms-transform: scale3d(@process);
+  -o-transform: scale3d(@process);
+  transform: scale3d(@process);
+}
+
+//  Select BG
+.select-bg() {
+    &:before {
+        position: absolute;
+        top: -1px;
+        content: "";
+        height: ~"calc(100% - 1px)";
+        width: 30px;
+        background-color: @card-bg;
+        background-position: right ~"calc(100% - 7px)";
+        background-repeat: no-repeat;
+        .img-retina('../img/select.png', '../img/select@2x.png', 12px, 12px);
+        pointer-events: none;
+        z-index: 5;
+        right: 0;
+    }
+}
+
+// Input Colors Variants
+.input-color-variant(@color, @helper-color, @tik-color) {
+    .form-group__bar {
+        &:before,
+        &:after {
+            background-color: @helper-color;
+        }
+    }
+
+    label {
+        color: @color;
+    }
+
+    .checkbox, .radio {
+        input {
+            &:checked + .input-helper {
+                &:before {
+                    background-color: @helper-color;
+                    border-color: @helper-color;
+                }
+            }
+        }
+
+        .input-helper {
+            &:before {
+                border-color: @helper-color;
+            }
+
+            &:after {
+                color: @tik-color;
+            }
+        }
+    }
+}
+
+
+// Appearance
+.appearance(@value) {
+    -webkit-appearance: @value;
+    -moz-appearance: @value;
+    appearance: @value;
+}
+
+// Button(Override)
+.button-variant(@color; @background; @border) {
+    color: @color;
+    background-color: @background;
+    border-color: @border;
+
+    &:focus,
+    &.focus {
+        color: @color;
+        background-color: darken(@background, 5%);
+        border-color: darken(@border, 5%);
+    }
+    &:hover {
+        color: @color;
+        background-color: darken(@background, 5%);
+        border-color: darken(@border, 5%);
+    }
+    &:active,
+    &.active,
+    .open > .dropdown-toggle& {
+        color: @color;
+        background-color: @background;
+        border-color: @background;
+
+        &:hover,
+        &:focus,
+        &.focus {
+            color: @color;
+            background-color: @background;
+            border-color: @background;
+        }
+    }
+    &:active,
+    &.active,
+    .open > .dropdown-toggle& {
+        background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            background-color: @background;
+            border-color: @border;
+        }
+    }
+
+    .badge {
+        color: @background;
+        background-color: @color;
+    }
+}
+
+// Alert(override)
+.alert-variant(@background; @border; @text-color) {
+    background-color: @background;
+    border-color: @border;
+    color: @text-color;
+
+    hr {
+        border-top-color: darken(@border, 5%);
+    }
+    .alert-link {
+        color: @text-color;
+    }
+}

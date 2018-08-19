@@ -1,0 +1,92 @@
+.contacts__item {
+    border-radius: 2px;
+    background-color: @card-bg;
+    position: relative;
+
+    @media(min-width: @screen-sm-min) {
+        margin-bottom: 30px;
+
+        .contacts__img {
+            display: block;
+
+            img {
+                width: 100%;
+                border-radius: 2px 2px 0 0;
+            }
+        }
+    }
+
+    @media(max-width: @screen-xs-max) {
+        padding: 15px;
+        margin-bottom: 2px;
+        .clearfix();
+
+        .contacts__img {
+            display: inline-block;
+            float: left;
+
+            img {
+                width: 60px;
+                border-radius: 100%;
+            }
+        }
+    }
+}
+
+.contacts__img {
+    margin: -1px -1px 0;
+}
+
+.contacts__info {
+    @media(min-width: @screen-sm-min) {
+        text-align: center;
+        margin-top: 25px;
+        padding: 0 5px;
+    }
+
+    @media(max-width: @screen-xs-max) {
+        overflow: hidden;
+        text-align: left;
+        padding: 10px 38px 0 15px;
+    }
+
+    strong {
+        font-size: 14px;
+        font-weight: 400;
+        color: @headings-color;
+    }
+
+    small {
+        margin-top: 3px;
+    }
+
+    strong,
+    small {
+        .text-overflow();
+        display: block;
+    }
+}
+
+.contacts__btn {
+    @media(min-width: @screen-sm-min) {
+        width: 100%;
+        margin-top: 25px;
+        border-radius: 0 0 2px 2px;
+    }
+
+    @media(max-width: @screen-xs-max) {
+        position: absolute;
+        top: 50%;
+        margin-top: -17px;
+        right: 15px;
+        font-size: 0;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        padding: 0;
+
+        & > i {
+            font-size: 15px;
+        }
+    }
+}

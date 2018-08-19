@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Admin Extended Dark</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <body>
+    <header id="header">
+    <div class="header__logo">Material Admin Extended Dark</div>
+
+    <div class="header__links">
+        <a href="">Demo</a>
+        <a href="">Purchase</a>
+    </div>
+</header>
+
+    <main id="main">
+        <aside id="sidebar" data-spy="affix" data-offset-top="72">
+    <ul class="sidebar__links">
+        <li>
+            <span class="sidebar__title">Getting Started</span>
+            <ul>
+                <li><a href="index.html#getting-started">What's Included</a></li>
+                <li><a href="index.html#css-name">CSS Naming Conventions</a></li>
+                <li><a href="index.html#compiling-css-js">Compiling CSS and JavaScript</a></li>
+                <li><a href="index.html#using-less">Using LESS</a></li>
+                <li><a href="index.html#third-party-vendors">Third Party Vendors</a></li>
+                <li><a href="index.html#basic-template">Basic Template</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Tables</span>
+            <ul>
+                <li><a href="tables.html">Normal Tables</a></li>
+                <li><a href="data-tables.html">Data Tables</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Form</span>
+            <ul>
+                <li><a href="form-elements.html">Form Groups & Elements</a></li>
+                <li><a href="form-components.html">Form Components</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">User Interface</span>
+            <ul>
+                <li><a href="animations.html">CSS Animations</a></li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="icons.html">Icons</a></li>
+                <li><a href="preloaders.html">Preloaders</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="dialogs.html">Dialogs</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Components</span>
+            <ul>
+                <li><a href="dropdown.html">Dropdown</a></li>
+                <li><a href="modal.html">Modal</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+                <li><a href="collapse.html">Collapse</a></li>
+                <li><a href="tooltips-popovers.html">Tooltips and Popovers</a></li>
+                <li><a href="progress-bar.html">Progress Bar</a></li>
+                <li><a href="pagination.html">Pagination</a></li>
+                <li><a href="media-object.html">Media Objects</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Charts</span>
+            <ul>
+                <li><a href="flot-charts.html">Flot Charts</a></li>
+                <li><a href="sparkline.html">Sparkline Charts</a></li>
+                <li><a href="easypie.html">EasyPie Charts</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Photo Gallery</span>
+            <ul>
+                <li><a href="photos.html">Default</a></li>
+                <li><a href="photos-timeline.html">Timeline</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="calendar.html">Calendar</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">CSS</span>
+
+            <ul>
+                <li><a href="css.html#containers">Containers</a></li>
+                <li><a href="css.html#page-headers">Page Headers</a></li>
+                <li><a href="css.html#action-icons">Action Icons</a></li>
+                <li><a href="css.html#cards">Cards</a></li>
+                <li><a href="css.html#list-groups">List Groups</a></li>
+                <li><a href="generic-classes.html">Generic Classes</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Site Components and Features</span>
+
+            <ul>
+                <li><a href="site-components.html#toggleable-blocks">Toggleable Blocks</a></li>
+                <li><a href="site-components.html#js-actions">Javascript Actions</a></li>
+                <li><a href="site-components.html#salvatore">Salvatore Masonry Grids</a></li>
+            </ul>
+        </li>
+    </ul>
+</aside>
+
+            <section id="content">
+                <div class="content__wrapper">
+                    <div class="content__title">
+                        <h2>Media</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__title">
+                            <h2>Thumbnail</h2>
+                        </div>
+
+                        <p>Extend Bootstrap's grid system with the thumbnail component to easily display grids of images, videos, text, and more.</p>
+
+                        <h4 class="card__sub">Basic Example</h4>
+                        <p>By default, thumbnails are designed to showcase linked images with minimal required markup.</p>
+                        
+                        <div class="card__demo">
+                            <img src="img/media/thumbnail.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;a href=&#x22;#&#x22; class=&#x22;thumbnail&#x22;&#x3E;
+    &#x3C;img src=&#x22;demo/img/300x200.gif&#x22; alt=&#x22;&#x22;&#x3E;
+&#x3C;/a&#x3E;</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">Custom content</h4>
+                        <p>With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.</p>
+
+                        <div class="card__demo">
+                            <img src="img/media/custom.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;div class=&#x22;thumbnail&#x22;&#x3E;
+    &#x3C;img src=&#x22;demo/img/300x200.gif&#x22; alt=&#x22;&#x22;&#x3E;
+    &#x3C;div class=&#x22;caption&#x22;&#x3E;
+        &#x3C;h4&#x3E;Thumbnail label&#x3C;/h4&#x3E;
+        &#x3C;p&#x3E;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&#x3C;/p&#x3E;
+
+        &#x3C;a href=&#x22;#&#x22; class=&#x22;btn btn-sm btn-default&#x22; role=&#x22;button&#x22;&#x3E;Button&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <br><br>
+
+                        <p>Source files:</p>
+
+                        <ul>
+                            <li>LESS: <code>/less/inc/bootstrap-overrides/thumbnail.less</code></li>
+                            <li>HTML: <code>/media/html</code></li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__title">
+                            <h2>LightGallery Lightbox</h2>
+                        </div>
+
+                        <p>JQuery lightGallery is a lightweight jQuery lightbox gallery for displaying image and video gallery.</p>
+
+                        <p>Official website and detailed documentation at <a href="https://github.com/sachinchoolur/lightGallery" target="_blank">https://github.com/sachinchoolur/lightGallery</a></p>
+
+                        <p>You can check the live preview at <code>/media.html</code></p>
+
+                        <br>
+
+                        <p>In order to use this plugin, make sure to include it's Javascript asset file in the <code>&#x3C;head&#x3E;</code> section.</p>
+
+                        <div class="card__demo card__demo--light">
+                            <pre><code class="language-html">&#x3C;!-- CSS --&#x3E;
+&#x3C;link href=&#x22;vendors/bower_components/lightgallery/dist/css/lightgallery.min.css&#x22; rel=&#x22;stylesheet&#x22;&#x3E;
+
+&#x3C;!-- JS --&#x3E;
+&#x3C;script src=&#x22;vendors/bower_components/lightgallery/lib/lightgallery-all.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">Images</h4>
+
+                        <div class="card__demo">
+                            <img src="img/media/lightbox-image.jpg" alt="">
+
+                            <ul class="tab-nav tab-nav--justified">
+                                <li class="active"><a href="#lightbox-html" data-toggle="tab">HTML</a></li>
+                                <li><a href="#lightbox-js" data-toggle="tab">Javascript</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="lightbox-html">
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;lightbox&#x22;&#x3E;
+    &#x3C;div data-src=&#x22;media/gallery/1.jpg&#x22;&#x3E;
+        &#x3C;div class=&#x22;lightbox__item&#x22;&#x3E;
+            &#x3C;img src=&#x22;demo/img/gallery/thumbs/1.jpg&#x22; alt=&#x22;&#x22; /&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+
+                                <div class="tab-pane" id="lightbox-js">
+                                    <pre><code class="language-js">// Please note that this funtion is already included in js/app.min.js(from js/inc/funtions.js) thus you don't to add this again.
+
+$('.lightbox').lightGallery({
+    enableTouch: true
+});</code></pre>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h4 class="card__sub">Videos</h4>
+
+                        <div class="card__demo card__demo--light">
+<pre><code class="language-html">&#x3C;div class=&#x22;lightbox&#x22;&#x3E;
+    &#x3C;div data-src=&#x22;https://www.youtube.com/watch?v=bZrrGF2MHIs&#x22;&#x3E;
+        &#x3C;div class=&#x22;lightbox__item&#x22;&#x3E;
+            &#x3C;img src=&#x22;demo/img/gallery/thumbs/1.jpg&#x22; alt=&#x22;&#x22; /&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <br><br>
+
+                        <p>Source files:</p>
+
+                        <ul>
+                            <li>
+                                Plugin
+                                <ul>
+                                    <li>CSS: <code>/vendors/bower_components/lightgallery/dist/css/lightgallery.min.css</code></li>
+                                    <li>JS: <code>/vendors/bower_components/lightgallery/lib/lightgallery-all.min.js</code></li>
+                                </ul>
+                            </li>
+                            <li>LESS: <code>/less/inc/vendor-overrides/light-gallery.less</code></li>
+                            <li>HTML: <code>/media/html</code></li>
+                            <li>JS(function): <code>/js/inc/functions.js</code></li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__title">
+                            <h2>Carousel</h2>
+                        </div>
+
+                        <p>A slideshow component for cycling through elements, like a carousel.</p>
+
+                        <p>This is a Bootstrap's javascript component. You can check it's complete documentation at <a href="http://getbootstrap.com/javascript/#carousel" target="_blank">http://getbootstrap.com/javascript/#carousel</a></p>
+
+                        <p>You can check the live preview at <code>/media.html</code></p>
+
+                        <br>
+
+                        <p>In order to use this plugin, make sure to include it's Javascript asset file in the <code>&#x3C;head&#x3E;</code> section.</p>
+
+                        <div class="card__demo card__demo--light">
+                            <pre><code class="language-html">&#x3C;script src=&#x22;vendors/bower_components/bootstrap/dist/js/bootstrap.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</code></pre>
+                        </div>
+                        
+                        <div class="card__demo">
+                            <img src="img/media/carousel.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;div id=&#x22;carousel-example-generic&#x22; class=&#x22;carousel slide&#x22; data-ride=&#x22;carousel&#x22;&#x3E;
+
+    &#x3C;!-- Indicators --&#x3E;
+    &#x3C;ol class=&#x22;carousel-indicators&#x22;&#x3E;
+      &#x3C;li data-target=&#x22;#carousel-example-generic&#x22; data-slide-to=&#x22;0&#x22; class=&#x22;active&#x22;&#x3E;&#x3C;/li&#x3E;
+      &#x3C;li data-target=&#x22;#carousel-example-generic&#x22; data-slide-to=&#x22;1&#x22;&#x3E;&#x3C;/li&#x3E;
+      &#x3C;li data-target=&#x22;#carousel-example-generic&#x22; data-slide-to=&#x22;2&#x22;&#x3E;&#x3C;/li&#x3E;
+    &#x3C;/ol&#x3E;
+
+    &#x3C;!-- Wrapper for slides --&#x3E;
+    &#x3C;div class=&#x22;carousel-inner&#x22;&#x3E;
+        &#x3C;div class=&#x22;item active&#x22;&#x3E;
+            &#x3C;img src=&#x22;demo/img/carousel/c-1.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+            &#x3C;div class=&#x22;carousel-caption&#x22;&#x3E;
+                &#x3C;h3&#x3E;First Slide Label&#x3C;/h3&#x3E;
+                &#x3C;p&#x3E;Some sample text goes here...&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;item&#x22;&#x3E;
+            &#x3C;img src=&#x22;demo/img/carousel/c-2.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;item&#x22;&#x3E;
+            &#x3C;img src=&#x22;demo/img/carousel/c-3.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;!-- Controls --&#x3E;
+    &#x3C;a class=&#x22;left carousel-control&#x22; href=&#x22;#carousel-example-generic&#x22; data-slide=&#x22;prev&#x22;&#x3E;
+        &#x3C;span class=&#x22;zmdi zmdi-chevron-left&#x22;&#x3E;&#x3C;/span&#x3E;
+    &#x3C;/a&#x3E;
+    &#x3C;a class=&#x22;right carousel-control&#x22; href=&#x22;#carousel-example-generic&#x22; data-slide=&#x22;next&#x22;&#x3E;
+        &#x3C;span class=&#x22;zmdi zmdi-chevron-right&#x22;&#x3E;&#x3C;/span&#x3E;
+    &#x3C;/a&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <br><br>
+
+                        <p>Source files:</p>
+
+                        <ul>
+                            <li>LESS: <code>/less/inc/bootstrap-overrides/carousel.less</code></li>
+                            <li>HTML: <code>/media/html</code></li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__title">
+                            <h2>Responsive Embed</h2>
+                        </div>
+
+                        <p>Allow browsers to determine video or slideshow dimensions based on the width of their containing block by creating an intrinsic ratio that will properly scale on any device.</p>
+
+                        <p>This is a Bootstrap component and you check it's detailed documentation at <a href="http://getbootstrap.com/components/#responsive-embed" target="_blank">http://getbootstrap.com/components/#responsive-embed</a></p>
+
+                        <h4 class="card__sub">4:3 Aspect Ratio</h4>
+                        <div class="card__demo card__demo--light">
+                            <pre><code class="language-html">&#x3C;div class=&#x22;embed-responsive embed-responsive-4by3&#x22;&#x3E;
+    &#x3C;iframe class=&#x22;embed-responsive-item&#x22; src=&#x22;http://www.youtube.com/embed/Kxe_RRonq0o&#x22;&#x3E;&#x3C;/iframe&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">16:9 Aspect Ratio</h4>
+                        <div class="card__demo card__demo--light">
+                            <pre><code class="language-html">&#x3C;div class=&#x22;embed-responsive embed-responsive-16by9&#x22;&#x3E;
+    &#x3C;iframe class=&#x22;embed-responsive-item&#x22; src=&#x22;http://www.youtube.com/embed/aaZXDm3RXuo&#x22;&#x3E;&#x3C;/iframe&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <br><br>
+
+                        <p>Source files:</p>
+
+                        <ul>
+                            <li>HTML: <code>/media/html</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/functions.js"></script>
+    </body>
+</html>

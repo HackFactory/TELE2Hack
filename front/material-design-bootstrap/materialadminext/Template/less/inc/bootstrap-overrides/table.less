@@ -1,0 +1,27 @@
+.table {
+    & > thead {
+        & > tr {
+            & > th {
+                border-bottom-width: 1px;
+                color: @mae-light;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.table--vmiddle {
+    th,
+    td {
+        vertical-align: middle;
+    }
+}
+
+@media(min-width: @screen-sm-min) {
+    .table-striped:not(.table-bordered) {
+        & > thead > tr > th,
+        & > tbody > tr > td {
+            vertical-align: middle;
+        }
+    }
+}
