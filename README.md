@@ -15,6 +15,6 @@
 
 * Куприянов Артем (front, UI/UX)
 
-* (Воротынцев Денис)[https://www.linkedin.com/in/denis-vorotyntsev/] (детектор аномалий, тренды)
+* [Воротынцев Денис](https://www.linkedin.com/in/denis-vorotyntsev/) (детектор аномалий, тренды)
 
 * Абулханов Дмитрий (качество обслуживания)
