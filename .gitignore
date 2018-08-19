@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+*__pycache__/
+__pycache__/
+models/
+/.idea
+.idea
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Jupyter Notebook
+.ipynb_checkpoints
+/.project
+/.pydevproject
