@@ -4,6 +4,8 @@ __pycache__/
 models/
 /.idea
 .idea
+.DS_Store
+*.DS_Store
 
 # Flask stuff:
 instance/
