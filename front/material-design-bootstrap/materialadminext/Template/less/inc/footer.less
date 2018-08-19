@@ -1,0 +1,24 @@
+#footer {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 0;
+    color: @mae-lightest;
+
+    .footer__menu {
+        .list-inline();
+        display: block;
+        width: 100%;
+        margin: 8px 0 0 0;
+        
+        & > li > a {
+            color: @mae-lightest;
+            .transition(color);
+            .transition-duration(300ms);
+            
+            &:hover {
+                color: @mae-lighter;
+            }
+        } 
+    }
+}

@@ -1,0 +1,33 @@
+@media print {    
+    @page {
+        margin: 0;
+        size: auto;
+    }
+    
+    body {
+        margin: 0mm 0mm 0mm 0mm !important;
+        padding: 0mm !important;
+    }
+    
+    #header,
+    .actions,
+    .content__header,
+    #footer,
+    #notifications,
+    #navigation,
+    #chat,
+    .growl-animated,
+    .btn--fixed {
+        display: none !important;
+    }
+    
+    // Invoice
+    .invoice {
+        padding: 30px !important;
+        -webkit-print-color-adjust: exact !important;
+
+        .content__header {
+            display: none;
+        }
+    }
+}

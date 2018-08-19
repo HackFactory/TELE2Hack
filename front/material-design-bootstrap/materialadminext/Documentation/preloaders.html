@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Admin Extended Dark</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <body>
+    <header id="header">
+    <div class="header__logo">Material Admin Extended Dark</div>
+
+    <div class="header__links">
+        <a href="">Demo</a>
+        <a href="">Purchase</a>
+    </div>
+</header>
+
+    <main id="main">
+        <aside id="sidebar" data-spy="affix" data-offset-top="72">
+    <ul class="sidebar__links">
+        <li>
+            <span class="sidebar__title">Getting Started</span>
+            <ul>
+                <li><a href="index.html#getting-started">What's Included</a></li>
+                <li><a href="index.html#css-name">CSS Naming Conventions</a></li>
+                <li><a href="index.html#compiling-css-js">Compiling CSS and JavaScript</a></li>
+                <li><a href="index.html#using-less">Using LESS</a></li>
+                <li><a href="index.html#third-party-vendors">Third Party Vendors</a></li>
+                <li><a href="index.html#basic-template">Basic Template</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Tables</span>
+            <ul>
+                <li><a href="tables.html">Normal Tables</a></li>
+                <li><a href="data-tables.html">Data Tables</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Form</span>
+            <ul>
+                <li><a href="form-elements.html">Form Groups & Elements</a></li>
+                <li><a href="form-components.html">Form Components</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">User Interface</span>
+            <ul>
+                <li><a href="animations.html">CSS Animations</a></li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="icons.html">Icons</a></li>
+                <li><a href="preloaders.html">Preloaders</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="dialogs.html">Dialogs</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Components</span>
+            <ul>
+                <li><a href="dropdown.html">Dropdown</a></li>
+                <li><a href="modal.html">Modal</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+                <li><a href="collapse.html">Collapse</a></li>
+                <li><a href="tooltips-popovers.html">Tooltips and Popovers</a></li>
+                <li><a href="progress-bar.html">Progress Bar</a></li>
+                <li><a href="pagination.html">Pagination</a></li>
+                <li><a href="media-object.html">Media Objects</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Charts</span>
+            <ul>
+                <li><a href="flot-charts.html">Flot Charts</a></li>
+                <li><a href="sparkline.html">Sparkline Charts</a></li>
+                <li><a href="easypie.html">EasyPie Charts</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Photo Gallery</span>
+            <ul>
+                <li><a href="photos.html">Default</a></li>
+                <li><a href="photos-timeline.html">Timeline</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="calendar.html">Calendar</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">CSS</span>
+
+            <ul>
+                <li><a href="css.html#containers">Containers</a></li>
+                <li><a href="css.html#page-headers">Page Headers</a></li>
+                <li><a href="css.html#action-icons">Action Icons</a></li>
+                <li><a href="css.html#cards">Cards</a></li>
+                <li><a href="css.html#list-groups">List Groups</a></li>
+                <li><a href="generic-classes.html">Generic Classes</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Site Components and Features</span>
+
+            <ul>
+                <li><a href="site-components.html#toggleable-blocks">Toggleable Blocks</a></li>
+                <li><a href="site-components.html#js-actions">Javascript Actions</a></li>
+                <li><a href="site-components.html#salvatore">Salvatore Masonry Grids</a></li>
+            </ul>
+        </li>
+    </ul>
+</aside>
+
+            <section id="content">
+                <div class="content__wrapper">
+                    <div class="content__title">
+                        <h2>Preloaders</h2>
+                    </div>
+
+                    <div class="card">
+                        <p>CSS and SVG based material design style preloaders.</p>
+
+                        <p>You can check the live preview at <code>/preloaders.html</code></p>
+
+                        <h4 class="card__sub">Basic example</h4>
+                        <p>Preloaders are available in multiple color variants.</p>
+
+                        <div class="card__demo">
+                            <img src="img/preloaders/color.gif" alt="">
+
+                            <pre><code class="language-html">&#x3C;!-- Light --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--light&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22; /&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Red --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--red&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22; /&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Blue --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--blue&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22;/&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Green --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--green&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22; /&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Yellow --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--yellow&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22; /&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Blue Grey --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--bluegray&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22; /&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Amber --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--amber&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22; /&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Teal --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--teal&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22; /&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Pink --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--pink&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22; /&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Purple --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--purple&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22; /&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">Sizing</h4>
+                        <p>Preloaders are also available in 4 custom sizes.</p>
+
+                        <div class="card__demo">
+                            <img src="img/preloaders/size.gif" alt="">
+
+                            <pre><code class="language-html">&#x3C;!-- Small --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--sm preloader--light&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22; /&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Default --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--light&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22; /&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Large --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--lg preloader--light&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22; /&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;!-- Extar Large --&#x3E;
+&#x3C;div class=&#x22;preloader preloader--xl preloader--light&#x22;&#x3E;
+    &#x3C;svg viewBox=&#x22;25 25 50 50&#x22;&#x3E;
+        &#x3C;circle cx=&#x22;50&#x22; cy=&#x22;50&#x22; r=&#x22;20&#x22; /&#x3E;
+    &#x3C;/svg&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <p>Source files:</p>
+                        <ul>
+                            <li>LESS: <code>/less/inc/preloader.less</code></li>
+                            <li>HTML: <code>/preloaders.html</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/functions.js"></script>
+    </body>
+</html>

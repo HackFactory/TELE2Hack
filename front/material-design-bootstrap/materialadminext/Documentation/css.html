@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Admin Extended Dark</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <body>
+        <header id="header">
+    <div class="header__logo">Material Admin Extended Dark</div>
+
+    <div class="header__links">
+        <a href="">Demo</a>
+        <a href="">Purchase</a>
+    </div>
+</header>
+
+        <main id="main">
+            <aside id="sidebar" data-spy="affix" data-offset-top="72">
+    <ul class="sidebar__links">
+        <li>
+            <span class="sidebar__title">Getting Started</span>
+            <ul>
+                <li><a href="index.html#getting-started">What's Included</a></li>
+                <li><a href="index.html#css-name">CSS Naming Conventions</a></li>
+                <li><a href="index.html#compiling-css-js">Compiling CSS and JavaScript</a></li>
+                <li><a href="index.html#using-less">Using LESS</a></li>
+                <li><a href="index.html#third-party-vendors">Third Party Vendors</a></li>
+                <li><a href="index.html#basic-template">Basic Template</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Tables</span>
+            <ul>
+                <li><a href="tables.html">Normal Tables</a></li>
+                <li><a href="data-tables.html">Data Tables</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Form</span>
+            <ul>
+                <li><a href="form-elements.html">Form Groups & Elements</a></li>
+                <li><a href="form-components.html">Form Components</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">User Interface</span>
+            <ul>
+                <li><a href="animations.html">CSS Animations</a></li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="icons.html">Icons</a></li>
+                <li><a href="preloaders.html">Preloaders</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="dialogs.html">Dialogs</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Components</span>
+            <ul>
+                <li><a href="dropdown.html">Dropdown</a></li>
+                <li><a href="modal.html">Modal</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+                <li><a href="collapse.html">Collapse</a></li>
+                <li><a href="tooltips-popovers.html">Tooltips and Popovers</a></li>
+                <li><a href="progress-bar.html">Progress Bar</a></li>
+                <li><a href="pagination.html">Pagination</a></li>
+                <li><a href="media-object.html">Media Objects</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Charts</span>
+            <ul>
+                <li><a href="flot-charts.html">Flot Charts</a></li>
+                <li><a href="sparkline.html">Sparkline Charts</a></li>
+                <li><a href="easypie.html">EasyPie Charts</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Photo Gallery</span>
+            <ul>
+                <li><a href="photos.html">Default</a></li>
+                <li><a href="photos-timeline.html">Timeline</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="calendar.html">Calendar</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">CSS</span>
+
+            <ul>
+                <li><a href="css.html#containers">Containers</a></li>
+                <li><a href="css.html#page-headers">Page Headers</a></li>
+                <li><a href="css.html#action-icons">Action Icons</a></li>
+                <li><a href="css.html#cards">Cards</a></li>
+                <li><a href="css.html#list-groups">List Groups</a></li>
+                <li><a href="generic-classes.html">Generic Classes</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Site Components and Features</span>
+
+            <ul>
+                <li><a href="site-components.html#toggleable-blocks">Toggleable Blocks</a></li>
+                <li><a href="site-components.html#js-actions">Javascript Actions</a></li>
+                <li><a href="site-components.html#salvatore">Salvatore Masonry Grids</a></li>
+            </ul>
+        </li>
+    </ul>
+</aside>
+
+            <section id="content">
+                <div class="content__wrapper">
+                    <div class="content__title">
+                        <h2>CSS</h2>
+                    </div>
+
+                    <div class="card" id="containers">
+                        <div class="card__title">
+                            <h2>Containers</h2>
+                        </div>
+
+                        <p>Material Admin requires a containing element to wrap site contents in order to make it center aligned. There are 2 different variant of containers available in Material Admin. Note that, due to padding and more, neither container is nestable.</p>
+
+                        <ul class="tab-nav tab-nav--justified">
+                            <li class="active"><a href="#container-no" data-toggle="tab">No Container(default)</a></li>
+                            <li><a href="#container-boxed" data-toggle="tab">Container boxed</a></li>
+                            <li><a href="#container-boxed-small" data-toggle="tab">Container boxed small</a></li>
+                        </ul>
+
+                        <br>
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="container-no">
+                                <img class="img-thumbnail img-thumbnail--ful" src="img/containers/no-container.jpg" alt="">
+
+                                <div class="card__demo card__demo--light">
+                                    <pre><code class="language-html">&#x3C;div id=&#x22;content&#x22;&#x3E;
+    &#x3C;!-- contents --&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+
+                                <br>
+
+                                <p>Usage examples:</p>
+
+                                <ul>
+                                    <li><code>/index.html</code></li>
+                                    <li><code>/typography.html</code></li>
+                                    <li><code>/widgets.html</code></li>
+                                    <li><code>/tables.html</code></li>
+                                    <li>etc.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="container-boxed">
+                                <img class="img-thumbnail img-thumbnail--ful" src="img/containers/container-boxed.jpg" alt="">
+
+                                <div class="card__demo card__demo--light">
+                                    <pre><code class="language-html">&#x3C;div id=&#x22;content&#x22; class=&#x22;content--boxed&#x22;&#x3E;
+    &#x3C;!-- contents --&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+
+                                <br>
+
+                                <p>Usage examples:</p>
+
+                                <ul>
+                                    <li><code>/messages.html</code></li>
+                                    <li><code>/calendar.html</code></li>
+                                    <li><code>/pricing-table.html</code></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="container-boxed-small">
+                                <img class="img-thumbnail img-thumbnail--ful" src="img/containers/container-boxed-small.jpg" alt="">
+
+                                <div class="card__demo card__demo--light">
+                                    <pre><code class="language-html">&#x3C;div id=&#x22;content&#x22; class=&#x22;content--boxed-sm&#x22;&#x3E;
+    &#x3C;!-- contents --&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+
+                                <br>
+
+                                <p>Usage examples:</p>
+
+                                <ul>
+                                    <li><code>/profile-timeline.html</code></li>
+                                    <li><code>/profile-about.html</code></li>
+                                    <li><code>/pricing-photos.html</code></li>
+                                    <li><code>/wall.html</code></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <p>Source LESS file: <code>/less/inc/base.less</code></p>
+                    </div>
+
+                    <div class="card" id="page-headers">
+                        <div class="card__title">
+                            <h2>Page Headers</h2>
+                        </div>
+
+                        <p>Page header is a wrapper for page titles and optional page actions.</p>
+
+                        <ul class="tab-nav tab-nav--justified">
+                            <li class="active"><a href="#page-header-basic" data-toggle="tab">Basic page header</a></li>
+                            <li><a href="#page-header-text" data-toggle="tab">Page header with text</a></li>
+                            <li><a href="#page-header-actions" data-toggle="tab">Page header with actions</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="page-header-basic">
+                                <div class="card__demo">
+                                    <img src="img/page-headers/1.jpg" alt="">
+
+                                    <pre><code class="language-html">&#x3C;section id=&#x22;content&#x22;&#x3E;
+    &#x3C;div class=&#x22;content__header&#x22;&#x3E;
+        &#x3C;h2&#x3E;This is a page header&#x3C;/h2&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/section&#x3E;</code></pre>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="page-header-text">
+
+                                <div class="card__demo">
+                                    <img src="img/page-headers/2.jpg" alt="">
+
+                                    <pre><code class="language-html">&#x3C;div id=&#x22;content&#x22;&#x3E;
+    &#x3C;div class=&#x22;content__header&#x22;&#x3E;
+        &#x3C;h2&#x3E;This is a page header &#x3C;small&#x3E;this is a sample page header sub text&#x3C;/small&#x3E;&#x3C;/h2&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="page-header-actions">
+
+                                <div class="card__demo">
+                                    <img src="img/page-headers/3.jpg" alt="">
+
+                                    <pre><code class="language-html">&#x3C;div id=&#x22;content&#x22;&#x3E;
+    &#x3C;div class=&#x22;content__header&#x22;&#x3E;
+        &#x3C;h2&#x3E;This is a page header &#x3C;small&#x3E;this is a sample page header sub text&#x3C;/small&#x3E;&#x3C;/h2&#x3E;
+
+        &#x3C;div class=&#x22;actions&#x22;&#x3E;
+            &#x3C;a href=&#x22;&#x22;&#x3E;&#x3C;i class=&#x22;zmdi zmdi-search&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+            &#x3C;a href=&#x22;&#x22;&#x3E;&#x3C;i class=&#x22;zmdi zmdi-home&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <p>You can also use the helper classes in order to align the title to right or center.</p>
+
+                        <div class="card__demo card__demo--light">
+                            <pre><code class="language-html">&#x3C;div id=&#x22;content&#x22;&#x3E;
+    &#x3C;div class=&#x22;content__header text-right&#x22;&#x3E;&#x3C;!-- or .text-center --&#x3E;
+        &#x3C;h2&#x3E;This is a page header&#x3C;/h2&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <br>
+
+                        <p>Source LESS file: <code>/less/inc/misc.less</code></p>
+                    </div>
+
+                    <div class="card" id="action-icons">
+                        <div class="card__title">
+                            <h2>Action Icons</h2>
+                        </div>
+                        
+                        <p>Action Icons are used to perform a certain list of actions within a title, list or in any element using icons.</p>
+
+
+                        <div class="card__demo">
+                            <img src="img/action-icons/2.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;div class=&#x22;actions&#x22;&#x3E;
+    &#x3C;a href=&#x22;&#x22;&#x3E;&#x3C;i class=&#x22;zmdi zmdi-favorite-outline&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+    &#x3C;a href=&#x22;&#x22;&#x3E;&#x3C;i class=&#x22;zmdi zmdi-print&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+    &#x3C;a href=&#x22;&#x22;&#x3E;&#x3C;i class=&#x22;zmdi zmdi-email&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+    &#x3C;span class=&#x22;dropdown&#x22;&#x3E;
+        &#x3C;a href=&#x22;&#x22; data-toggle=&#x22;dropdown&#x22;&#x3E;&#x3C;i class=&#x22;zmdi zmdi-share&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+
+        &#x3C;ul class=&#x22;dropdown-menu&#x22;&#x3E;
+            &#x3C;li&#x3E;&#x3C;/li&#x3E;
+        &#x3C;/ul&#x3E;
+    &#x3C;/span&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <br>
+
+                        <p>To override position of the action-icons, you can simply add a modifier class on <code>.actions</code> and customize it as per your need.</p>
+
+                        <p>e.g HTML</p>
+
+                        <div class="card__demo card__demo--light">
+                            <pre><code class="language-html">&#x3C;div class=&#x22;actions actions--list&#x22;&#x3E;
+   ...
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <br>
+
+                        <p>e.g CSS</p>
+
+                        <div class="card__demo card__demo--light">
+                            <pre><code class="language-css">.actions--list {
+    float: right;
+    margin-top: 10px;
+    ...
+}</code></pre>
+                        </div>
+
+                        <br>
+
+                        <p>Action Icons usage in template:</p>
+
+                        <ol>
+                            <li><code>/index.html</code></li>
+                            <li><code>/widgets.html</code></li>
+                            <li><code>/photos.html</code></li>
+                            <li><code>/photo-timeline.html</code></li>
+                            <li><code>/calendar.html</code></li>
+                            <li><code>/list-view.html</code></li>
+                            <li><code>/messages.html</code></li>
+                            <li>...</li>
+                        </ol>
+
+                        <br>
+
+                        <p>Source LESS file: <code>/less/inc/misc.less</code></p>
+                    </div>
+
+                    <div class="card" id="cards">
+                        <div class="card__title">
+                            <h2>Cards</h2>
+                        </div>
+
+                        <p>In Material Admin, a card is a sheet of material that serves as an entry point to more detailed information.</p>
+
+                        <h4 class="card__sub">Basic example:</h4>
+
+                        <div class="card__demo">
+                            <img src="img/cards/basic.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;div class=&#x22;card&#x22;&#x3E;
+    &#x3C;div class=&#x22;card__header&#x22;&#x3E;
+        &#x3C;h1&#x3E;Curabitur blandit tempus porttitor&#x3C;/h1&#x3E;
+        &#x3C;small&#x3E;by Sam Andersion on 17th July 2016&#x3C;/small&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;card__body&#x22;&#x3E;
+        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;card__footer&#x22;&#x3E;
+        &#x3C;button class=&#x22;btn btn-sm btn-link&#x22;&#x3E;Save&#x3C;/button&#x3E;
+        &#x3C;button class=&#x22;btn btn-sm btn-link&#x22;&#x3E;Cancel&#x3C;/button&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">Card with image header:</h4>
+
+                        <div class="card__demo">
+                            <img src="img/cards/image.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;div class=&#x22;card&#x22;&#x3E;
+    &#x3C;a class=&#x22;card__img&#x22; href=&#x22;&#x22;&#x3E;
+        &#x3C;img src=&#x22;img/demo/blog/2.jpg&#x22; alt=&#x22;&#x22;&#x3E;
+    &#x3C;/a&#x3E;
+
+    &#x3C;div class=&#x22;card__header&#x22;&#x3E;
+        &#x3C;h1&#x3E;Curabitur blandit tempus porttitor&#x3C;/h1&#x3E;
+        &#x3C;small&#x3E;by Sam Andersion on 17th July 2016&#x3C;/small&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;card__body&#x22;&#x3E;
+        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;card__footer&#x22;&#x3E;
+        &#x3C;button class=&#x22;btn btn-sm btn-link&#x22;&#x3E;Save&#x3C;/button&#x3E;
+        &#x3C;button class=&#x22;btn btn-sm btn-link&#x22;&#x3E;Cancel&#x3C;/button&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">Card with sub sections:</h4>
+
+                        <div class="card__demo">
+                            <img src="img/cards/sub.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;div class=&#x22;card&#x22;&#x3E;
+    &#x3C;div class=&#x22;card__body&#x22;&#x3E;
+        &#x3C;div class=&#x22;card__sub&#x22;&#x3E;
+            &#x3C;h4&#x3E;About Robert B. Osborne&#x3C;/h4&#x3E;
+            &#x3C;p&#x3E;Pellentesque vitae quam quis tellus dignissim faucibus. Suspendisse mattis felis at faucibus lobortis. Sed sit amet tellus dolor. Fusce quis sollicitudin velit. Praesent gravida ullamcorper lectus et tincidunt. Phasellus lectus quam, porta pharetra feugiat in, auctor eget dolor.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;card__sub&#x22;&#x3E;
+            &#x3C;h4&#x3E;Specialties&#x3C;/h4&#x3E;
+            &#x3C;p&#x3E;Property Management, Buyer&#x27;s Agent, Listing Agent&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;card__sub&#x22;&#x3E;
+            &#x3C;h4&#x3E;Education&#x3C;/h4&#x3E;
+            &#x3C;p&#x3E;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctuso.&#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">Card with form inputs:</h4>
+
+                        <div class="card__demo">
+                            <img src="img/cards/form.jpg" alt="">
+                            <pre><code class="language-html">&#x3C;form class=&#x22;card&#x22;&#x3E;
+    &#x3C;div class=&#x22;card__header card__header--highlight&#x22;&#x3E;
+        &#x3C;h2&#x3E;Ask a Question&#x3C;/h2&#x3E;
+        &#x3C;small&#x3E;Aeneanquam ellentesque ornare lacinia venenatis&#x3C;/small&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;card__body&#x22;&#x3E;
+        &#x3C;div class=&#x22;form-group form-group--float&#x22;&#x3E;
+            &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22;&#x3E;
+            &#x3C;i class=&#x22;form-group__bar&#x22;&#x3E;&#x3C;/i&#x3E;
+            &#x3C;label&#x3E;Name&#x3C;/label&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;form-group form-group--float&#x22;&#x3E;
+            &#x3C;input type=&#x22;text&#x22; class=&#x22;form-control&#x22;&#x3E;
+            &#x3C;i class=&#x22;form-group__bar&#x22;&#x3E;&#x3C;/i&#x3E;
+            &#x3C;label&#x3E;Email Address&#x3C;/label&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;form-group form-group--float&#x22;&#x3E;
+            &#x3C;textarea class=&#x22;form-control textarea-autoheight&#x22;&#x3E;&#x3C;/textarea&#x3E;
+            &#x3C;i class=&#x22;form-group__bar&#x22;&#x3E;&#x3C;/i&#x3E;
+            &#x3C;label&#x3E;Message&#x3C;/label&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;small class=&#x22;text-muted&#x22;&#x3E;By sending us your information, you agree to Root&#x2019;s Terms of Use &#x26; Privacy Policy.&#x3C;/small&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;card__footer&#x22;&#x3E;
+        &#x3C;button class=&#x22;btn btn-default&#x22;&#x3E;Submit&#x3C;/button&#x3E;
+        &#x3C;button class=&#x22;btn btn-link&#x22;&#x3E;Reset&#x3C;/button&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/form&#x3E;</code></pre>
+                        </div>
+
+                        <br>
+
+                        <p>Likewise, UI possibilities of cards are endless. Cards are also useful to wrap content and show as widgets. This can be used in main content, sidebars, widgets, dropdown-menu, etc.</p>
+
+                        <p>Some usage examples in the template:</p>
+
+                        <ol>
+                            <li><code>index.html</code></li>
+                            <li><code>widgets.html</code></li>
+                            <li><code>tables.html</code></li>
+                            <li>And in pretty much all the pages used in Material Admin...</li>
+                        </ol>
+
+                        <br>
+
+                        <p>Source LESS file: <code>/less/inc/card.less</code></p>
+                    </div>
+
+                    <div class="card" id="list-groups">
+                        <div class="card__title">
+                            <h2>List Groups</h2>
+                        </div>
+
+                        <p>List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content. In Roost, default Bootstrap list group is highly customized to fit more contents rather than just headings and texts.</p>
+
+                        <h4 class="card__sub">Basic example:</h4>
+                        
+                        <div class="card__demo">
+                            <img src="img/list-group/basic.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;div class=&#x22;list-group&#x22;&#x3E;
+    &#x3C;a href=&#x22;&#x22; class=&#x22;list-group-item&#x22;&#x3E;
+        &#x3C;div class=&#x22;list-group__heading&#x22;&#x3E;David Villa Jacobs&#x3C;/div&#x3E;
+        &#x3C;small class=&#x22;list-group__text&#x22;&#x3E;Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis lobortis sapien non posuere&#x3C;/small&#x3E;
+    &#x3C;/a&#x3E;
+
+    &#x3C;a href=&#x22;&#x22; class=&#x22;list-group-item&#x22;&#x3E;
+        &#x3C;div class=&#x22;list-group__heading&#x22;&#x3E;Candice Barnes&#x3C;/div&#x3E;
+        &#x3C;small class=&#x22;list-group__text&#x22;&#x3E;Quisque non tortor ultricies, posuere elit id, lacinia purus curabitur.&#x3C;/small&#x3E;
+    &#x3C;/a&#x3E;
+    ...
+&#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">With <a href="css.html#cards">card</a> and <a href="css.html#media-object">media-object</a> integrated:</h4>
+
+                        <div class="card__demo">
+                            <img src="img/list-group/card.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;div class=&#x22;card&#x22;&#x3E;
+        &#x3C;div class=&#x22;card__header&#x22;&#x3E;
+            &#x3C;h2&#x3E;You may also like...&#x3C;/h2&#x3E;
+            &#x3C;small&#x3E;Morbi risus porta consectetur vestibulum ateros&#x3C;/small&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;list-group&#x22;&#x3E;
+            &#x3C;a href=&#x22;&#x22; class=&#x22;list-group-item media&#x22;&#x3E;
+                &#x3C;div class=&#x22;pull-left&#x22;&#x3E;
+                    &#x3C;img src=&#x22;img/demo/listing/thumbs/2.jpg&#x22; alt=&#x22;&#x22; class=&#x22;avatar-img&#x22;&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;media-body list-group__text&#x22;&#x3E;
+                    &#x3C;div class=&#x22;list-group__heading&#x22;&#x3E;Candice Barnes&#x3C;/div&#x3E;
+                    &#x3C;small class=&#x22;list-group__text&#x22;&#x3E;Quisque non tortor ultricies, posuere elit id, lacinia purus curabitur.&#x3C;/small&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/a&#x3E;
+
+            &#x3C;a href=&#x22;&#x22; class=&#x22;list-group-item media&#x22;&#x3E;
+                &#x3C;div class=&#x22;pull-left&#x22;&#x3E;
+                    &#x3C;img src=&#x22;img/demo/listing/thumbs/3.jpg&#x22; alt=&#x22;&#x22; class=&#x22;avatar-img&#x22;&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;media-body list-group__text&#x22;&#x3E;
+                    &#x3C;div class=&#x22;list-group__heading&#x22;&#x3E;David Villa Jacobs&#x3C;/div&#x3E;
+                    &#x3C;small class=&#x22;list-group__text&#x22;&#x3E;Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis lobortis sapien non posuere&#x3C;/small&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/a&#x3E;
+            ...
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">With <a href="css.html#action-icons">action icons</a> integrated:</h4>
+
+                        <div class="card__demo">
+                            <img src="img/list-group/action-icon.jpg" alt="" class="img-thumbnail">
+
+                            <pre><code class="language-html">...
+        &#x3C;div class=&#x22;list-group-item&#x22;&#x3E;
+            &#x3C;div class=&#x22;list-group__text&#x22;&#x3E;
+                &#x3C;div class=&#x22;list-group__heading&#x22;&#x3E;David Villa Jacobs&#x3C;/div&#x3E;
+                &#x3C;small class=&#x22;list-group__text&#x22;&#x3E;Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis lobortis sapien non posuere&#x3C;/small&#x3E;
+            &#x3C;/div&#x3E;
+
+            &#x3C;div class=&#x22;actions list-group__actions&#x22;&#x3E;
+                &#x3C;span class=&#x22;dropdown&#x22;&#x3E;
+                    &#x3C;a href=&#x22;&#x22; data-toggle=&#x22;dropdown&#x22;&#x3E;&#x3C;i class=&#x22;zmdi zmdi-more-vert&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+
+                    &#x3C;ul class=&#x22;dropdown-menu pull-right&#x22;&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;&#x22;&#x3E;Mark as done&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;&#x22;&#x3E;Edit&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;a href=&#x22;&#x22; data-demo-action=&#x22;delete-listing&#x22;&#x3E;Delete&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                &#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    ...</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">With list group attributes:</h4>
+
+                        <div class="card__demo">
+                            <img src="img/list-group/attrs.jpg" alt="">
+
+                            <pre><code class="language-html"><pre><code class="language-html">...
+    &#x3C;a href=&#x22;&#x22; class=&#x22;list-group-item&#x22;&#x3E;
+        &#x3C;div class=&#x22;list-group__text&#x22;&#x3E;
+            &#x3C;div class=&#x22;list-group__heading&#x22;&#x3E;David Villa Jacobs&#x3C;/div&#x3E;
+            &#x3C;small class=&#x22;list-group__text&#x22;&#x3E;Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis lobortis sapien non posuere&#x3C;/small&#x3E;
+        &#x3C;/div&#x3E;
+
+        &#x3C;div class=&#x22;list-group__attrs&#x22;&#x3E;
+            &#x3C;div&#x3E;Date Created: 09/06/1988&#x3C;/div&#x3E;
+            &#x3C;div&#x3E;Members: 78954&#x3C;/div&#x3E;
+            &#x3C;div&#x3E;Published: No&#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/a&#x3E;
+...</code></pre></code></pre>
+                        </div>
+
+
+                        <h4 class="card__sub">List Group modifier classes</h4>
+
+                        <ol>
+                            <li>
+                                <p><code>.list-group--striped</code>: Adds zebra-striping to all even list group items within list group.</p>
+
+                                <div class="card__demo">
+                                    <img src="img/list-group/striped.jpg" alt="">
+
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;list-group list-group--striped&#x22;&#x3E;
+    ...
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+                                <br>
+                            </li>
+
+                            <li>
+                                <p><code>.list-group--light</code>: Transforms default list-group in to a light colored theme.</p>
+
+                                <div class="card__demo card__demo--light">
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;list-group list-group--light&#x22;&#x3E;
+    ...
+&#x3C;/div&#x3E;</code></pre>
+                                </div>
+                            </li>
+                        </ol>
+
+
+                        <h4 class="card__sub">Other List Group helper classes</h4>
+
+                        <ol>
+                            <li><code>.list-group__checkbox</code>: Aligns main checkboxes inside <code>list-group-item</code></li>
+                            <li><code>.list-group__empty</code>: Adds empty space end of <code>list-group</code></li>
+                        </ol>
+
+                        <br>
+
+                        <p>Usage examples:</p>
+                        <ol>
+                            <li><code>/messages.html</code></li>
+                            <li><code>/list-view.html.html</code></li>
+                            <li>...</li>
+                        </ol>
+
+                        <p>Source LESS file : <code>/less/bootstrap-overrides/list-group.less</code></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/functions.js"></script>
+    </body>
+</html>

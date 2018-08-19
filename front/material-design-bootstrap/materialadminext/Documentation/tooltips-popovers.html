@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Admin Extended Dark</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <body>
+    <header id="header">
+    <div class="header__logo">Material Admin Extended Dark</div>
+
+    <div class="header__links">
+        <a href="">Demo</a>
+        <a href="">Purchase</a>
+    </div>
+</header>
+
+    <main id="main">
+        <aside id="sidebar" data-spy="affix" data-offset-top="72">
+    <ul class="sidebar__links">
+        <li>
+            <span class="sidebar__title">Getting Started</span>
+            <ul>
+                <li><a href="index.html#getting-started">What's Included</a></li>
+                <li><a href="index.html#css-name">CSS Naming Conventions</a></li>
+                <li><a href="index.html#compiling-css-js">Compiling CSS and JavaScript</a></li>
+                <li><a href="index.html#using-less">Using LESS</a></li>
+                <li><a href="index.html#third-party-vendors">Third Party Vendors</a></li>
+                <li><a href="index.html#basic-template">Basic Template</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Tables</span>
+            <ul>
+                <li><a href="tables.html">Normal Tables</a></li>
+                <li><a href="data-tables.html">Data Tables</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Form</span>
+            <ul>
+                <li><a href="form-elements.html">Form Groups & Elements</a></li>
+                <li><a href="form-components.html">Form Components</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">User Interface</span>
+            <ul>
+                <li><a href="animations.html">CSS Animations</a></li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="icons.html">Icons</a></li>
+                <li><a href="preloaders.html">Preloaders</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="dialogs.html">Dialogs</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Components</span>
+            <ul>
+                <li><a href="dropdown.html">Dropdown</a></li>
+                <li><a href="modal.html">Modal</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+                <li><a href="collapse.html">Collapse</a></li>
+                <li><a href="tooltips-popovers.html">Tooltips and Popovers</a></li>
+                <li><a href="progress-bar.html">Progress Bar</a></li>
+                <li><a href="pagination.html">Pagination</a></li>
+                <li><a href="media-object.html">Media Objects</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Charts</span>
+            <ul>
+                <li><a href="flot-charts.html">Flot Charts</a></li>
+                <li><a href="sparkline.html">Sparkline Charts</a></li>
+                <li><a href="easypie.html">EasyPie Charts</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Photo Gallery</span>
+            <ul>
+                <li><a href="photos.html">Default</a></li>
+                <li><a href="photos-timeline.html">Timeline</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="calendar.html">Calendar</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">CSS</span>
+
+            <ul>
+                <li><a href="css.html#containers">Containers</a></li>
+                <li><a href="css.html#page-headers">Page Headers</a></li>
+                <li><a href="css.html#action-icons">Action Icons</a></li>
+                <li><a href="css.html#cards">Cards</a></li>
+                <li><a href="css.html#list-groups">List Groups</a></li>
+                <li><a href="generic-classes.html">Generic Classes</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Site Components and Features</span>
+
+            <ul>
+                <li><a href="site-components.html#toggleable-blocks">Toggleable Blocks</a></li>
+                <li><a href="site-components.html#js-actions">Javascript Actions</a></li>
+                <li><a href="site-components.html#salvatore">Salvatore Masonry Grids</a></li>
+            </ul>
+        </li>
+    </ul>
+</aside>
+
+            <section id="content">
+                <div class="content__wrapper">
+                    <div class="content__title">
+                        <h2>Tooltips and Popovers</h2>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__title">
+                            <h2>Tooltips</h2>
+                        </div>
+
+                        <p>Tooltips are an updated version, which don't rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
+
+                        <p>Tooltip is a Bootstrap component and you can find it's complete documentation with more examples at: <a href="http://getbootstrap.com/javascript/#tooltips" target="_blank">http://getbootstrap.com/javascript/#tooltips</a></p>
+
+                        <div class="card__demo">
+                            <img src="img/tooltips/basic.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;!-- Tooltip on the left --&#x3E;
+&#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn--light&#x22; data-toggle=&#x22;tooltip&#x22; data-placement=&#x22;left&#x22; title=&#x22;Tooltip on left&#x22;&#x3E;Tooltip on left&#x3C;/button&#x3E;
+
+&#x3C;!-- Tooltip on the top(default) --&#x3E;
+&#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn--light&#x22; data-toggle=&#x22;tooltip&#x22; title=&#x22;Tooltip on top&#x22;&#x3E;Tooltip on top&#x3C;/button&#x3E;
+
+&#x3C;!-- Tooltip on the bottom --&#x3E;
+&#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn--light&#x22; data-toggle=&#x22;tooltip&#x22; data-placement=&#x22;bottom&#x22; title=&#x22;Tooltip on bottom&#x22;&#x3E;Tooltip on bottom&#x3C;/button&#x3E;
+
+&#x3C;!-- Tooltip on the right --&#x3E;
+&#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn--light&#x22; data-toggle=&#x22;tooltip&#x22; data-placement=&#x22;right&#x22; title=&#x22;Tooltip on right&#x22;&#x3E;Tooltip on right&#x3C;/button&#x3E;</code></pre>
+                        </div>
+
+                        <br><br>
+
+                        <p>Source files:</p>
+
+                        <ul>
+                            <li>LESS: <code>/less/inc/bootstrap-overrides/tooltip.less</code></li>
+                            <li>HTML: <code>/components.less</code></li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__title">
+                            <h2>Popovers</h2>
+                        </div>
+
+                        <p>Add small overlays of content, like those on the iPad, to any element for housing secondary information. Popovers whose both title and content are zero-length are never displayed.</p>
+
+                        <p>Popover is a Bootstrap component and you can find it's complete documentation with more examples at: <a href="http://getbootstrap.com/javascript/#popovers" target="_blank">http://getbootstrap.com/javascript/#tooltips</a></p>
+
+                        <h4 class="card__sub">Basic example</h4>
+
+                        <div class="card__demo">
+                            <img src="img/tooltips/popover.jpg" alt="">
+
+                            <pre><code class="language-html">&#x3C;!-- popover on left --&#x3E;
+&#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-default&#x22; data-container=&#x22;body&#x22; data-toggle=&#x22;popover&#x22; data-placement=&#x22;left&#x22; data-content=&#x22;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&#x22;&#x3E;
+    Popover on left
+&#x3C;/button&#x3E;
+
+&#x3C;!-- popover on top --&#x3E;
+&#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-default&#x22; data-container=&#x22;body&#x22; data-toggle=&#x22;popover&#x22; data-placement=&#x22;top&#x22; data-content=&#x22;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&#x22;&#x3E;
+    Popover on top
+&#x3C;/button&#x3E;
+
+&#x3C;!-- popover on bottom --&#x3E;
+&#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-default&#x22; data-container=&#x22;body&#x22; data-toggle=&#x22;popover&#x22; data-placement=&#x22;bottom&#x22; data-content=&#x22;Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.&#x22;&#x3E;
+    Popover on bottom
+&#x3C;/button&#x3E;
+
+&#x3C;!-- popover on right --&#x3E;
+&#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-default&#x22; data-container=&#x22;body&#x22; data-toggle=&#x22;popover&#x22; data-placement=&#x22;right&#x22; data-content=&#x22;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&#x22;&#x3E;
+    Popover on right
+&#x3C;/button&#x3E;</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">Popover on hover</h4>
+
+                        <div class="card__demo card__demo--light">
+                            <pre><code class="language-html">&#x3C;button type=&#x22;button&#x22; class=&#x22;btn btn-default&#x22; data-trigger=&#x22;hover&#x22; data-container=&#x22;body&#x22; data-toggle=&#x22;popover&#x22; data-placement=&#x22;right&#x22; data-content=&#x22;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&#x22;&#x3E;
+    Popover on hover
+&#x3C;/button&#x3E;</code></pre>
+                        </div>
+
+                        <br><br>
+
+                        <p>Source files:</p>
+
+                        <ul>
+                            <li>LESS: <code>/less/inc/bootstrap-overrides/popover.less</code></li>
+                            <li>HTML: <code>/components.less</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/functions.js"></script>
+    </body>
+</html>

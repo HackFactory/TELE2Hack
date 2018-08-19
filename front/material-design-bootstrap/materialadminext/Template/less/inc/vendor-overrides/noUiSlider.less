@@ -1,0 +1,49 @@
+.noUi-target {
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    background: @mae-dark;
+}
+
+.noUi-horizontal {
+    height: 2px;
+
+    .noUi-handle {
+        top: -6px;
+        left: -1px;
+    }
+}
+
+.noUi-vertical {
+    width: 3px;
+}
+
+.noUi-connect {
+    background: @mae-light;
+    box-shadow: none;
+}
+
+.noUi-horizontal,
+.noUi-vertical {
+    .noUi-handle {
+        width: 15px;
+        height: 15px;
+        border: 0;
+        border-radius: 100%;
+        box-shadow: none;
+        .transition(box-shadow);
+        .transition-duration(200ms);
+        cursor: pointer;
+        position: relative;
+        background-color: @mae-lighter;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+
+    .noUi-active {
+        box-shadow: 0 0 0 12px rgba(255,255,255,0.055);
+    }
+}

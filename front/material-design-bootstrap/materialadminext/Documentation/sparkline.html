@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Admin Extended Dark</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <body>
+    <header id="header">
+    <div class="header__logo">Material Admin Extended Dark</div>
+
+    <div class="header__links">
+        <a href="">Demo</a>
+        <a href="">Purchase</a>
+    </div>
+</header>
+
+    <main id="main">
+        <aside id="sidebar" data-spy="affix" data-offset-top="72">
+    <ul class="sidebar__links">
+        <li>
+            <span class="sidebar__title">Getting Started</span>
+            <ul>
+                <li><a href="index.html#getting-started">What's Included</a></li>
+                <li><a href="index.html#css-name">CSS Naming Conventions</a></li>
+                <li><a href="index.html#compiling-css-js">Compiling CSS and JavaScript</a></li>
+                <li><a href="index.html#using-less">Using LESS</a></li>
+                <li><a href="index.html#third-party-vendors">Third Party Vendors</a></li>
+                <li><a href="index.html#basic-template">Basic Template</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Tables</span>
+            <ul>
+                <li><a href="tables.html">Normal Tables</a></li>
+                <li><a href="data-tables.html">Data Tables</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Form</span>
+            <ul>
+                <li><a href="form-elements.html">Form Groups & Elements</a></li>
+                <li><a href="form-components.html">Form Components</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">User Interface</span>
+            <ul>
+                <li><a href="animations.html">CSS Animations</a></li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="icons.html">Icons</a></li>
+                <li><a href="preloaders.html">Preloaders</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="dialogs.html">Dialogs</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Components</span>
+            <ul>
+                <li><a href="dropdown.html">Dropdown</a></li>
+                <li><a href="modal.html">Modal</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+                <li><a href="collapse.html">Collapse</a></li>
+                <li><a href="tooltips-popovers.html">Tooltips and Popovers</a></li>
+                <li><a href="progress-bar.html">Progress Bar</a></li>
+                <li><a href="pagination.html">Pagination</a></li>
+                <li><a href="media-object.html">Media Objects</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Charts</span>
+            <ul>
+                <li><a href="flot-charts.html">Flot Charts</a></li>
+                <li><a href="sparkline.html">Sparkline Charts</a></li>
+                <li><a href="easypie.html">EasyPie Charts</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Photo Gallery</span>
+            <ul>
+                <li><a href="photos.html">Default</a></li>
+                <li><a href="photos-timeline.html">Timeline</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="calendar.html">Calendar</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">CSS</span>
+
+            <ul>
+                <li><a href="css.html#containers">Containers</a></li>
+                <li><a href="css.html#page-headers">Page Headers</a></li>
+                <li><a href="css.html#action-icons">Action Icons</a></li>
+                <li><a href="css.html#cards">Cards</a></li>
+                <li><a href="css.html#list-groups">List Groups</a></li>
+                <li><a href="generic-classes.html">Generic Classes</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Site Components and Features</span>
+
+            <ul>
+                <li><a href="site-components.html#toggleable-blocks">Toggleable Blocks</a></li>
+                <li><a href="site-components.html#js-actions">Javascript Actions</a></li>
+                <li><a href="site-components.html#salvatore">Salvatore Masonry Grids</a></li>
+            </ul>
+        </li>
+    </ul>
+</aside>
+
+            <section id="content">
+                <div class="content__wrapper">
+                    <div class="content__title">
+                        <h2>jQuery Sparkline</h2>
+                    </div>
+
+                    <div class="card">
+                        <p>This jQuery plugin generates sparklines (small inline charts) directly in the browser using data supplied either inline in the HTML, or via javascript.</p>
+
+                        <p>Official website and detailed documentation at: <a href="http://omnipotent.net/jquery.sparkline/" target="_blank">http://omnipotent.net/jquery.sparkline/</a></p>
+
+                        <p>Live preview: <code>/other-charts.html</code></p>
+
+                        <br>
+
+                        <p>In order to use this component, make sure to include it's javascript asset file.</p>
+
+                        <div class="card__demo card__demo--light">
+                            <pre><code class="language-html">&#x3C;script src=&#x22;vendors/jquery.sparkline/jquery.sparkline.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</code></pre>
+                        </div>
+
+                        <h4 class="card__sub">Sparkline Bar Chart</h4>
+
+                        <div class="card__demo">
+                            <img src="img/charts/spark-bar.jpg" alt="">
+
+                            <ul class="tab-nav tab-nav--justified">
+                                <li class="active"><a href="#spark-bar-html" data-toggle="tab">HTML</a></li>
+                                <li><a href="#spark-bar-js" data-toggle="tab">Javascript</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="spark-bar-html">
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;chart-sparkline-bar&#x22;&#x3E;6,9,5,6,3,7,5,4,6,5,6,4,2,5,8,2,6,9,5,7,2,5,2,8,6,7,6,5,3,1,9,3,5,8,2,4&#x3C;/div&#x3E;</code></pre>
+                                </div>
+                                <div class="tab-pane" id="spark-bar-js">
+                            <pre><code class="language-js">$(&#x27;.chart-sparkline-bar&#x27;).sparkline(&#x27;html&#x27;, {
+    type: &#x27;bar&#x27;,
+    height: 40,
+    barWidth: 3,
+    barColor: &#x27;#b4bfc3&#x27;,
+    barSpacing: 2
+})</code></pre>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h4 class="card__sub">Sparkline Line Chart</h4>
+
+                        <div class="card__demo">
+                            <img src="img/charts/spark-line.jpg" alt="">
+
+                            <ul class="tab-nav tab-nav--justified">
+                                <li class="active"><a href="#spark-line-html" data-toggle="tab">HTML</a></li>
+                                <li><a href="#spark-line-js" data-toggle="tab">Javascript</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="spark-line-html">
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;chart-sparkline-line&#x22;&#x3E;9,5,6,3,9,7,5,4,6,5,6,4,9&#x3C;/div&#x3E;
+</code></pre>
+                                </div>
+                                <div class="tab-pane" id="spark-line-js">
+                    <pre><code class="language-js">$(&#x27;.chart-sparkline-line&#x27;).sparkline(&#x27;html&#x27;, {
+    type: &#x27;line&#x27;,
+    width: &#x27;100%&#x27;,
+    height: 50,
+    lineColor: rgba(255, 255, 255, 0.2)&#x27;,
+    fillColor: &#x27;rgba(0,0,0,0)&#x27;,
+    lineWidth: 1.5,
+    maxSpotColor: &#x27;#b4bfc3&#x27;,
+    minSpotColor: &#x27;#b4bfc3&#x27;,
+    spotColor: &#x27;#b4bfc3&#x27;,
+    spotRadius: 4,
+    highlightSpotColor: &#x27;#b4bfc3&#x27;,
+    highlightLineColor: &#x27;#b4bfc3&#x27;
+});</code></pre>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h4 class="card__sub">Sparkline Tristate Chart</h4>
+
+                        <div class="card__demo">
+                            <img src="img/charts/spark-tri.jpg" alt="">
+
+                            <ul class="tab-nav tab-nav--justified">
+                                <li class="active"><a href="#spark-tri-html" data-toggle="tab">HTML</a></li>
+                                <li><a href="#spark-tri-js" data-toggle="tab">Javascript</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="spark-tri-html">
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;chart-sparkline-tristate&#x22;&#x3E;1,1,0,1,-1,-1,1,-1,0,0,1,1,-1,0,0,0,0,-1,1,1,1,-1,1-1,1,-1,0,0,1,1,-1,-1,1,-1,0,0,1,1&#x3C;/div&#x3E;
+</code></pre>
+                                </div>
+                                <div class="tab-pane" id="spark-tri-js">
+                                    <pre><code class="language-js">$(&#x27;.chart-sparkline-tristate&#x27;).sparkline(&#x27;html&#x27;, {
+    type: &#x27;tristate&#x27;,
+    height: 40,
+    posBarColor: &#x27;#b4bfc3&#x27;,
+    zeroBarColor: &#x27;#b4bfc3&#x27;,
+    negBarColor: &#x27;rgba(255,255,255,0.08)&#x27;,
+    barWidth: 3,
+    barSpacing: 2
+});</code></pre>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h4 class="card__sub">Sparkline Discrete Chart</h4>
+
+                        <div class="card__demo">
+                            <img src="img/charts/spark-dis.jpg" alt="">
+
+                            <ul class="tab-nav tab-nav--justified">
+                                <li class="active"><a href="#spark-dis-html" data-toggle="tab">HTML</a></li>
+                                <li><a href="#spark-dis-js" data-toggle="tab">Javascript</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="spark-dis-html">
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;chart-sparkline-discrete&#x22;&#x3E;4,6,7,7,4,3,2,1,4,4,5,7,1,9,5,3,6,3,1,0,8,4,3,5,1,5,7,4,4,4,1,2,4,7,1,9,5,3,6,3,1,0,8,4,3,5,9,9,9,9,9,4,1,1,1,4,2,4,3,7,6,8,9,6,4,6,4,3,6,3,7,2,3&#x3C;/div&#x3E;
+</code></pre>
+                                </div>
+                                <div class="tab-pane" id="spark-dis-js">
+                                    <pre><code class="language-js">$(&#x27;.chart-sparkline-discrete&#x27;).sparkline(&#x27;html&#x27;, {
+    type: &#x27;discrete&#x27;,
+    height: 40,
+    lineColor: &#x27;#b4bfc3&#x27;,
+    thresholdColor: &#x27;rgba(255,255,255,0.1)&#x27;,
+    thresholdValue: 4
+});</code></pre>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h4 class="card__sub">Sparkline Bullet Chart</h4>
+
+                        <div class="card__demo">
+                            <img src="img/charts/spark-bullet.jpg" alt="">
+
+                            <ul class="tab-nav tab-nav--justified">
+                                <li class="active"><a href="#spark-bullet-html" data-toggle="tab">HTML</a></li>
+                                <li><a href="#spark-bullet-js" data-toggle="tab">Javascript</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="spark-bullet-html">
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;chart-sparkline-bullet&#x22;&#x3E;10,12,12,9,7&#x3C;/div&#x3E;</code></pre>
+                                </div>
+                                <div class="tab-pane" id="spark-bullet-js">
+                                    <pre><code class="language-js">$(&#x27;.chart-sparkline-bullet&#x27;).sparkline(&#x27;html&#x27;, {
+    type: &#x27;bullet&#x27;,
+    targetColor: &#x27;#ef5350&#x27;,
+    performanceColor: &#x27;#edeff0&#x27;,
+    rangeColors: [&#x27;rgba(255,255,255,0.08)&#x27;, &#x27;rgba(255,255,255,0.05)&#x27;, &#x27;rgba(255,255,255,0.02)&#x27;],
+    width: &#x27;100%&#x27;,
+    height: 50
+});</code></pre>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h4 class="card__sub">Sparkline Pie Chart</h4>
+
+                        <div class="card__demo">
+                            <img src="img/charts/spark-pie.jpg" alt="">
+
+                            <ul class="tab-nav tab-nav--justified">
+                                <li class="active"><a href="#spark-pie-html" data-toggle="tab">HTML</a></li>
+                                <li><a href="#spark-pie-js" data-toggle="tab">Javascript</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="spark-pie-html">
+                                    <pre><code class="language-html">&#x3C;div class=&#x22;chart-sparkline-pie&#x22;&#x3E;1,1,2&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;chart-sparkline-pie&#x22;&#x3E;1,1,1&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;chart-sparkline-pie&#x22;&#x3E;1,3,1,1&#x3C;/div&#x3E;</code></pre>
+                                </div>
+                                <div class="tab-pane" id="spark-pie-js">
+                                    <pre><code class="language-js">$(&#x27;.chart-sparkline-pie&#x27;).sparkline(&#x27;html&#x27;, {
+    type: &#x27;pie&#x27;,
+    height: 50,
+    sliceColors: [&#x27;#b4bfc3&#x27;, &#x27;#edeff0&#x27;, &#x27;rgba(177, 188, 192, 0.47)&#x27;, &#x27;rgba(177, 188, 192, 0.1)&#x27;]
+});</code></pre>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <p>Source files:</p>
+
+                        <ul>
+                            <li>Plugin
+                                <ul>
+                                    <li>CSS: <code>none</code></li>
+                                    <li>JS: <code>/vendors/jquery.sparkline/jquery.sparkline.min.js</code></li>
+                                </ul>
+                            </li>
+                            <li>LESS: <code>/less/inc/chart.less</code></li>
+                            <li>HTML: <code>/other-charts.html</code></li>
+                            <li>JS(demo): <code>/demo/js/sparkline-charts.js</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/functions.js"></script>
+    </body>
+</html>

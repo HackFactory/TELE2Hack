@@ -1,0 +1,207 @@
+.wall__posting {
+    .form-control {
+        padding: 20px 25px;
+        min-height: 80px;
+        border: 0;
+    }
+}
+
+.wall__actions {
+    background-color: @overlay-white;
+    border-radius: 0 0 2px 2px;
+    padding: 10px;
+
+    .clearfix();
+}
+
+.wall__actions__items {
+    padding: 0 5px;
+    float: left;
+
+    & > a {
+        font-size: 18px;
+        color: @mae-light;
+        padding: 0 3px;
+        
+        &:hover,
+        &:focus {
+            color: @mae-lighter;
+        }
+    }
+}
+
+.wall__actions__btn {
+    border-radius: 1px;
+    float: right;
+    padding: 3px 10px;
+    margin-right: 5px;
+}
+
+.wall__attrs {
+    .clearfix();
+}
+
+.wall__stats {
+    float: left;
+    margin-left: -1px;
+
+    & > span {
+        border: 1px solid @input-border;
+        float: left;
+        padding: 8px 10px;
+        margin-right: -1px;
+        cursor: pointer;
+        .user-select(none);
+        
+        &.active {
+            color: @mae-lighter;
+        }
+
+        &:not(.active):hover {
+            color: lighten(@text-color, 8%);
+        }
+    }
+}
+
+.wall__people {
+    @media(min-width: @screen-xs-min) {
+        float: right;
+
+        & > a {
+            & > img {
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                margin-left: 1px;
+            }
+        }
+    }
+}
+
+.wall__comments {
+    background: @card-highlight-color;
+}
+
+.wall__comments__lists {
+    padding: 30px 30px 5px;
+
+    .media {
+        position: relative;
+        margin: 0 0 20px;
+
+        &:hover {
+            .actions {
+                .opacity(1);
+            }
+        }
+    }
+    
+    .actions {
+        position: absolute;
+        right: -10px;
+        top: -3px;
+        .opacity(0);
+    }
+
+    .media-body {
+        & > a {
+            margin-right: 10px;
+            color: @mae-lighter;
+        }
+
+        & > small {
+            color: @mae-lightest;
+        }
+
+        & > p {
+            margin: 10px 0 0;
+        }
+    }
+}
+
+.wall__img {
+    text-align: center;
+    margin: 0 -2px 30px;
+    .clearfix();
+
+    .wall__img__item {
+        display: block;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        border-radius: 2px;
+        border: 2px solid @card-bg;
+        .bg-cover-inline();
+        cursor: pointer;
+        .transition(opacity);
+        .transition-duration(200ms);
+
+        &:hover {
+            .opacity(0.8);
+        }
+
+        & > img {
+            display: none;
+        }
+
+        &:first-child:nth-last-child(2),
+        &:first-child:nth-last-child(2) ~ div {
+            width: 50%;
+            padding-bottom: 40%;
+        }
+
+        &:first-child:nth-last-child(3),
+        &:first-child:nth-last-child(3) ~ div,
+        &:first-child:nth-last-child(4),
+        &:first-child:nth-last-child(4) ~ div:not(:last-child),
+        &:first-child:nth-last-child(5),
+        &:first-child:nth-last-child(5) ~ div:not(:nth-last-of-type(-n+2)),
+        &:first-child:nth-last-child(6),
+        &:first-child:nth-last-child(6) ~ div,
+        &:first-child:nth-last-child(7) ~ div:nth-last-of-type(-n+3) {
+            width: 33.333333%;
+            padding-bottom: 30%;
+        }
+
+        &:first-child:nth-last-child(5) ~ div:nth-last-of-type(-n+2) {
+            width: 50%;
+            padding-bottom: 40%;
+        }
+
+        &:first-child:nth-last-child(7),
+        &:first-child:nth-last-child(7) ~ div:not(:nth-last-of-type(-n+3)),
+        &:first-child:nth-last-child(n+8),
+        &:first-child:nth-last-child(n+8) ~ div {
+            width: 25%;
+            padding-bottom: 22%;
+        }
+
+        &:only-child,
+        &:first-child:nth-last-child(4) ~ div:nth-child(4) {
+            width: 100%;
+            padding-bottom: 50%;
+        }
+    }
+}
+
+.wall__comments__input {
+    padding: 0 30px 25px;
+
+    textarea {
+        background-color: @mae-dark;
+        padding: 20px 22px;
+        border-radius: 2px;
+        resize: none;
+        border: 0;
+        width: 100%;
+        color: @input-color;
+        .transition(background-color);
+        .transition-duration(300ms);
+
+        .placeholder(@mae-lightest);
+
+        &:focus {
+            background-color: darken(@mae-dark, 1%);
+        }
+    }
+}

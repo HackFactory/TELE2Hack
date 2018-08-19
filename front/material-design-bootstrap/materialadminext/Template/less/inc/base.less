@@ -1,0 +1,75 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:active,
+*:active,
+*:hover {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    overflow-x: ~"hidden\0/";
+    -ms-overflow-style: none;
+}
+
+body {
+    &:before {
+    content: '';
+    height: 266px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #1e2a31;
+        @media(max-width: @screen-xs-max) {
+            height: 216px;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            height: 265px;
+
+            @media(max-width: @screen-xs-max) {
+                height: 215px;
+            }
+        }
+    }
+}
+
+audio, video {  
+    outline: none;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+#main {
+    position: relative;
+    
+    @media (min-width: @screen-mobile-min) {
+        padding: 0 40px 30px @sidebar-left-width;
+        min-height: ~"calc(100vh - 159px)";
+    }
+    
+    @media (max-width: @screen-mobile-max) and (min-width: @screen-sm-min) {
+        padding: 0 40px 30px;
+    }
+    
+    @media (max-width: @screen-xs-max)  {
+        padding: 0 15px 30px;
+    }
+}
+
+.content--boxed {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.content--boxed-sm {
+    max-width: 900px;
+    margin: 0 auto;
+}

@@ -1,0 +1,85 @@
+.list-group {
+    margin-bottom: 0;
+}
+
+.list-group--striped {
+    .list-group-item:nth-child(even) {
+        background-color: @list-group-hover-bg;
+    }
+}
+
+.list-group--light {
+    a.list-group-item:hover {
+        background-color: lighten(@mae-lighter, 2%);
+    }
+
+    .list-group__heading {
+        color: darken(@text-color-dark, 20%);
+    }
+
+    .list-group__text {
+        color: @text-color-dark;
+    }
+}
+
+
+.list-group-item {
+    border: 0;
+    margin: 0;
+    padding: 15px 30px;
+    .transition(background-color);
+    .transition-duration(300ms);
+}
+
+.list-group__heading,
+.list-group__text {
+    .text-overflow();
+}
+
+.list-group__heading {
+    color: @mae-light;
+}
+
+.list-group__text {
+    display: block;
+    font-size: 12px;
+    color: @mae-lightest;
+    margin-top: 4px;
+}
+
+.list-group__actions {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}
+
+.list-group__attrs {
+    display: block;
+    margin-top: 10px;
+
+    & > span {
+        padding: 5px 10px 6px;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        display: inline-block;
+        line-height: 100%;
+        font-size: 12px;
+        margin: 0 2px 1px 0;
+
+        & > i {
+            font-size: 14px;
+            position: relative;
+            margin-top: -2px;
+            margin-right: 4px;
+            vertical-align: top;
+            top: 2px;
+        }
+    }
+}
+
+.list-group__checkbox {
+    margin: 1px 0 0 0;
+}
+
+.list-group__empty {
+    height: 15px;
+}

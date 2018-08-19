@@ -1,0 +1,93 @@
+/* Default Overrides */
+.btn {
+    .transition(all);
+    .transition-duration(300ms);
+
+    &:focus,
+    &:active {
+        box-shadow: none;
+    }
+}
+
+.btn-link {
+    color: @mae-light;
+    border-radius: 2px;
+
+    &:hover,
+    &:focus {
+        color: @mae-lighter;
+    }
+}
+
+
+/* Custom MAE Buttons */
+.btn--float {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 47px;
+    background-color: darken(@mae-lighter, 10%);
+
+    &:not(.btn--fixed) {
+        position: absolute;
+    }
+
+    i {
+        color: @mae-darker;
+        font-size: 23px;
+        .transition(all);
+        .transition-duration(500ms);
+    }
+
+    &:hover {
+        i {
+            .rotate(360deg);
+        }
+    }
+}
+
+.btn--fixed {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.btn--light {
+    background-color:@mae-muted;
+    border-color: @mae-muted;
+    color: @mae-light;
+
+    &:hover,
+    &:focus {
+        background-color: lighten(@mae-muted, 3%);
+        border-color: lighten(@mae-muted, 3%);
+        color: @mae-light;
+    }
+}
+
+/* Custom MAE Button Icons */
+.btn--icon {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 39px;
+    padding: 0;
+    font-size: 17px;
+    text-align: center;
+}
+
+.btn--icon-text {
+    &:not(.btn-xs):not(.btn-sm):not(.btn-lg) {
+        & > .zmdi {
+            font-size: 16px;
+            padding-bottom: 1px;
+        }
+    }
+
+    &:not(.btn-xs):not(.btn-sm) {
+        & > .zmdi {
+            vertical-align: bottom;
+            margin-right: 3px;
+        }
+    }
+}

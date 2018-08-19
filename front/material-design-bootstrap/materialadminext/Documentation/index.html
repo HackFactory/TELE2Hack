@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Admin Extended Dark</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <body>
+        <header id="header">
+    <div class="header__logo">Material Admin Extended Dark</div>
+
+    <div class="header__links">
+        <a href="">Demo</a>
+        <a href="">Purchase</a>
+    </div>
+</header>
+
+        <main id="main">
+            <aside id="sidebar" data-spy="affix" data-offset-top="72">
+    <ul class="sidebar__links">
+        <li>
+            <span class="sidebar__title">Getting Started</span>
+            <ul>
+                <li><a href="index.html#getting-started">What's Included</a></li>
+                <li><a href="index.html#css-name">CSS Naming Conventions</a></li>
+                <li><a href="index.html#compiling-css-js">Compiling CSS and JavaScript</a></li>
+                <li><a href="index.html#using-less">Using LESS</a></li>
+                <li><a href="index.html#third-party-vendors">Third Party Vendors</a></li>
+                <li><a href="index.html#basic-template">Basic Template</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Tables</span>
+            <ul>
+                <li><a href="tables.html">Normal Tables</a></li>
+                <li><a href="data-tables.html">Data Tables</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Form</span>
+            <ul>
+                <li><a href="form-elements.html">Form Groups & Elements</a></li>
+                <li><a href="form-components.html">Form Components</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">User Interface</span>
+            <ul>
+                <li><a href="animations.html">CSS Animations</a></li>
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="icons.html">Icons</a></li>
+                <li><a href="preloaders.html">Preloaders</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="dialogs.html">Dialogs</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Components</span>
+            <ul>
+                <li><a href="dropdown.html">Dropdown</a></li>
+                <li><a href="modal.html">Modal</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="wizard.html">Wizard</a></li>
+                <li><a href="collapse.html">Collapse</a></li>
+                <li><a href="tooltips-popovers.html">Tooltips and Popovers</a></li>
+                <li><a href="progress-bar.html">Progress Bar</a></li>
+                <li><a href="pagination.html">Pagination</a></li>
+                <li><a href="media-object.html">Media Objects</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Charts</span>
+            <ul>
+                <li><a href="flot-charts.html">Flot Charts</a></li>
+                <li><a href="sparkline.html">Sparkline Charts</a></li>
+                <li><a href="easypie.html">EasyPie Charts</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Photo Gallery</span>
+            <ul>
+                <li><a href="photos.html">Default</a></li>
+                <li><a href="photos-timeline.html">Timeline</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li><a href="calendar.html">Calendar</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">CSS</span>
+
+            <ul>
+                <li><a href="css.html#containers">Containers</a></li>
+                <li><a href="css.html#page-headers">Page Headers</a></li>
+                <li><a href="css.html#action-icons">Action Icons</a></li>
+                <li><a href="css.html#cards">Cards</a></li>
+                <li><a href="css.html#list-groups">List Groups</a></li>
+                <li><a href="generic-classes.html">Generic Classes</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="sidebar__title">Site Components and Features</span>
+
+            <ul>
+                <li><a href="site-components.html#toggleable-blocks">Toggleable Blocks</a></li>
+                <li><a href="site-components.html#js-actions">Javascript Actions</a></li>
+                <li><a href="site-components.html#salvatore">Salvatore Masonry Grids</a></li>
+            </ul>
+        </li>
+    </ul>
+</aside>
+
+            <section id="content">
+                <div class="content__wrapper">
+                    <div class="content__title">
+                        <h2>Getting Started</h2>
+                    </div>
+
+                    <div class="card" id="getting-started">
+                        <div class="card__title">
+                            <h2>What's Included</h2>
+                        </div>
+
+                        <p>The Material Admin source code download includes the precompiled CSS, JavaScript, and font assets, along with
+                            source Less, JavaScript, and documentation. More specifically, it includes the following and
+                            more:</p>
+
+                        <div class="card__demo card__demo--light">
+                            <pre><code class="language-non">documentation/
+template/
+    ├── css/
+    ├── less/
+    ├── js/
+    ├── img/
+    ├── fonts/
+    ├── vendors/
+    │     ├── bower_components/
+    │     └── ...
+    ├── demo/
+    │     ├── css/
+    │     ├── js/
+    │     ├── img/
+    │     └── media/
+    ├── gruntfile.js
+    ├── package.json
+    ├── index.html
+    └── ...</code></pre>
+                        </div>
+
+                        <br>
+
+                        <p>The less/, js/, and fonts/ are the source code for our CSS, JS, and icon fonts (respectively).</p>
+                    </div>
+
+                    <div class="card" id="css-name">
+                        <div class="card__title">
+                            <h2>CSS Naming Conventions</h2>
+                        </div>
+
+                        <p>Material Admin follows BEM naming conventions for all of it's CSS Class naming. BEM stands for Block, Element, Modifier and it's a popular methodology in HTML and CSS for naming convention. </p>
+                        <p>The BEM approach ensures that everyone who participates in the development of a website works with a single codebase and speaks the same language. Using proper naming will prepare you for the changes in design of the website.</p>
+
+                        <p>BEM example:</p>
+                        <div class="card__demo card__demo--light">
+                            <pre><code class="language-html">&#x3C;form class=&#x22;form form--simple&#x22;&#x3E;
+    &#x3C;div class=&#x22;form__group&#x22;&#x3E;
+        &#x3C;label class=&#x22;form__label&#x22;&#x3E;Label&#x3C;/label&#x3E;
+        &#x3C;input type=&#x22;text&#x22; class=&#x22;form__field form__field--block&#x22;&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;button class=&#x22;button button--red&#x22;&#x3E;Submit&#x3C;/button&#x3E;
+&#x3C;/form&#x3E;</code></pre>
+                        </div>
+
+                        <br>
+
+                        <p>To learn more about BEM naming convention, please go to <a target="_blank" href="http://getbem.com/naming/">http://getbem.com/naming/</a></p>
+
+                    </div>
+
+                    <div class="card" id="compiling-css-js">
+                        <div class="card__title">
+                            <h2>Compiling CSS and JavaScript</h2>
+                        </div>
+
+                        <p>Material Admin uses GruntJs for its build system. GruntJs is a task-based command line build tool for
+                            JavaScript projects ans it helps making most of our manual tasks to automate. In Material Admin we use
+                            GruntJs for:</p>
+
+                        <ol>
+                            <li>Compiling LESS to CSS.</li>
+                            <li>Splitting main CSS file to sub instances.</li>
+                            <li>Minification of CSS and JS files.</li>
+                            <li>Concating JS files.</li>
+                            <li>Cleaning Temp files.</li>
+                            <li>Copy/Move files and folders.</li>
+                            <li>Watch project file changes (dev).</li>
+                        </ol>
+
+                        <p>All the above tasks are added in gruntfile.js which is available in the main project folder. <code>gruntfile</code>
+                            just creates a basic grunt.js that you can fill in with tasks.</p>
+
+                        <h4 class="card__sub">Installing Grunt</h4>
+
+                        <p>To install Grunt, you must first <a href="https://nodejs.org/download/">download and install
+                            node.js</a> (which includes npm). npm stands for <a href="https://www.npmjs.com/">node packaged
+                            modules</a> and is a way to manage development dependencies through node.js.</p>
+                        <p>Then, from the command line:</p>
+                        <ol>
+                            <li>
+                                Install <code>grunt-cli</code> globally with:
+                                <div class="card__demo card__demo--light" style="margin-top: 10px"><pre><code class="language-bash">npm install -g grunt-cli</code></pre></div>
+                            </li>
+                            <li>Navigate to the root directory, then run <code>npm install</code>. npm
+                                will look at the <a href="https://github.com/twbs/bootstrap/blob/master/package.json"><code>package.json</code></a>
+                                file and automatically install the necessary local dependencies listed there.
+                            </li>
+                        </ol>
+                        <p>When completed, you'll be able to run the various Grunt commands provided from the command line.</p>
+
+                        <h4 class="card__sub">Before you make any changes...</h4>
+
+                        <p>Before you make any changes in less or js files, in your command line, make sure to run: </p>
+                        <div class="card__demo card__demo--light" style="margin-top: 10px"><pre><code class="language-bash">grunt watch</code></pre></div>
+
+                        <br>
+
+                        <p>Task <code>grunt watch</code> is a file watcher which will execute certain tasks when any given file
+                            changes. All less and js files should be watched in order to make changes in the output files (css
+                            and js).</p>
+
+                        <p>To check the official documentation of GruntJs, go to <a target="" href="http://gruntjs.com/">http://gruntjs.com</a></p>
+                    </div>
+
+                    <div class="card" id="using-less">
+                        <div class="card__title">
+                            <h2>Using LESS</h2>
+                        </div>
+
+                        <p>Material Admin's CSS is built on LESS, a preprocessor with additional functionality like variables, mixins,
+                            and functions for compiling CSS. We strongly recommend you use LESS rather than direct editing of
+                            CSS as most of the CSS including third party's are already combined in to a single CSS output file
+                            with splits.</p>
+                        <p>To view all the LESS variables added in this template, go to <code>/less/inc/variables.less</code>.
+                            This includes all the overridden Bootstrap and custom defined variables.</p>
+                        <p>To view the custom Mixins, go to <code>/less/inc/mixins.less/</code></p>
+                        <p>To read more about using LESS in Bootstrap framework, head on to <a target="_blank"
+                                                                                               href="http://getbootstrap.com/css/#less">http://getbootstrap.com/css/#less</a>
+                        </p>
+                    </div>
+
+                    <div class="card" id="third-party-vendors">
+                        <div class="card__title">
+                            <h2>Third party vendors</h2>
+                        </div>
+
+                        <p>At Material Admin, most of the third party vendors are managed through Bower package manager. Bower can manage
+                            components that contain HTML, CSS, JavaScript, fonts or even image files. Bower doesn’t concatenate
+                            or minify code or do anything else - it just installs the right versions of the packages you need
+                            and their dependencies.</p>
+                        <p>To install Bower in your machine globally with npm(assuming you have NodeJs installed), go to command
+                            line and run: </p>
+                        <div class="card__demo card__demo--light" style="margin-top: 10px"><pre><code class="language-bash">npm install -g bower</code></pre></div>
+
+                        <br>
+
+                        <p>To install any third party bower package, run command <code>bower install [package-name]
+                            --save</code></p>
+                        <p>e.g</p>
+                        <div class="card__demo card__demo--light" style="margin-top: 10px"><pre><code class="language-bash">bower install jquery --save</code></pre></div>
+
+                        <br>
+
+                        <p>Bower is initiated inside <code>/vendors/</code> folder. So make sure to navigate to the
+                            respective folder before you install any packages.</p>
+
+                        <p>To read more about bower and bower packages, go to <a target="_blank" href="https://bower.io/">https://bower.io/</a>
+                        </p>
+
+                        <h4 class="card__sub">Installed Vendors List</h4>
+
+                        <ol>
+                            <li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+                            <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                            <li><a href="https://github.com/ifightcrime/bootstrap-growl" target="_blank">Bootstrap Growl</a></li>
+                            <li><a href="https://acko.net/blog/farbtastic-jquery-color-picker-plug-in/" target="_blank">Farbtastic Color Picker</a></li>
+                            <li><a href="http://www.jasny.net/bootstrap/javascript/#fileinput" target="_blank">Simple File Input</a></li>
+                            <li><a href="http://omnipotent.net/jquery.sparkline/" target="_blank">jQuery Sparklines</a></li>
+                            <li><a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a></li>
+                            <li><a href="http://www.jacklmoore.com/autosize/" target="_blank">Autosize Textarea</a></li>
+                            <li><a href="http://www.flotcharts.org/" target="_blank">Flot</a></li>
+                            <li><a href="https://github.com/emmerich/flot-orderBars" target="_blank">Flot Orderbars</a></li>
+                            <li><a href="https://github.com/MichaelZinsmaier/CurvedLines" target="_blank">Flot CurvedLines</a></li>
+                            <li><a href="https://github.com/krzysu/flot.tooltip" target="_blank">Flot Tooltips</a></li>
+                            <li><a href="http://fullcalendar.io/" target="_blank">FullCalendar</a></li>
+                            <li><a href="https://igorescobar.github.io/jQuery-Mask-Plugin/" target="_blank">jQuery Mask</a></li>
+                            <li><a href="http://www.jquery-bootgrid.com/" target="_blank">jQuery Bootgrid</a></li>
+                            <li><a href="https://github.com/mathiasbynens/jquery-placeholder" target="_blank">jQuery Placeholder</a></li>
+                            <li><a href="https://rendro.github.io/easy-pie-chart/" target="_blank">Easy Pie charts</a></li>
+                            <li><a href="https://sachinchoolur.github.io/lightGallery/" target="_blank">LightGallery</a></li>
+                            <li><a href="http://manos.malihu.gr/jquery-custom-content-scroller" target="_blank">Malihu jQuery Custom Scrollbar</a></li>
+                            <li><a href="http://zavoloklom.github.io/material-design-iconic-font/" target="_blank">Material Design Iconic Font</a></li>
+                            <li><a href="http://momentjs.com/" target="_blank">Moment.js</a></li>
+                            <li><a href="https://refreshless.com/nouislider/" target="_blank">noUiSlider</a></li>
+                            <li><a href="http://salvattore.com/" target="_blank">Salvattore</a></li>
+                            <li><a href="https://select2.github.io/" target="_blank">Select 2</a></li>
+                            <li><a href="http://simpleweatherjs.com/" target="_blank">Simple Weather</a></li>
+                            <li><a href="https://limonte.github.io/sweetalert2/" target="_blank">SweetAlert 2</a></li>
+                            <li><a href="http://github.com/VinceG/twitter-bootstrap-wizard" target="_blank">Bootstrap Wizard</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="card" id="basic-template">
+                        <div class="card__title">
+                            <h2>Basic Template</h2>
+                        </div>
+
+                        <div class="card__demo card__demo--light">
+                            <pre><code class="language-html">&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html lang=&#x22;en&#x22;&#x3E;
+    &#x3C;!--[if IE 9 ]&#x3E;&#x3C;html class=&#x22;ie9&#x22;&#x3E;&#x3C;![endif]--&#x3E;
+    &#x3C;head&#x3E;
+        &#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
+        &#x3C;meta http-equiv=&#x22;X-UA-Compatible&#x22; content=&#x22;IE=edge&#x22;&#x3E;
+        &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1&#x22;&#x3E;
+        &#x3C;title&#x3E;Page Title&#x3C;/title&#x3E;
+
+        &#x3C;!-- Site CSS --&#x3E;
+        &#x3C;link href=&#x22;css/app.min.css&#x22; rel=&#x22;stylesheet&#x22;&#x3E;
+    &#x3C;/head&#x3E;
+
+    &#x3C;body&#x3E;
+        &#x3C;header id=&#x22;header&#x22;&#x3E;
+
+            &#x3C;!-- Logo --&#x3E;
+            &#x3C;div class=&#x22;logo&#x22;&#x3E;
+                &#x3C;a href=&#x22;index.html&#x22; class=&#x22;hidden-xs&#x22;&#x3E;
+                    Material
+                    &#x3C;small&#x3E;admin inversed&#x3C;/small&#x3E;
+                &#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+
+            &#x3C;!-- Other Header Content --&#x3E;
+        &#x3C;/header&#x3E;
+
+        &#x3C;section id=&#x22;main&#x22;&#x3E;
+            &#x3C;aside id=&#x22;notifications&#x22;&#x3E;
+                &#x3C;!-- Notifications Content --&#x3E;
+            &#x3C;/aside&#x3E;
+
+            &#x3C;aside id=&#x22;navigation&#x22;&#x3E;
+                &#x3C;!-- Site Navigation Content --&#x3E;
+            &#x3C;/aside&#x3E;
+
+            &#x3C;section id=&#x22;content&#x22;&#x3E;
+
+                &#x3C;!-- Page Heading --&#x3E;
+                &#x3C;div class=&#x22;content__header&#x22;&#x3E;
+                    &#x3C;h2&#x3E;Sample heading&#x3C;/h2&#x3E;
+                &#x3C;/div&#x3E;
+
+                &#x3C;!-- Page Contents --&#x3E;
+            &#x3C;/section&#x3E;
+
+            &#x3C;footer id=&#x22;footer&#x22;&#x3E;
+                &#x3C;!-- Footer Contents --&#x3E;
+            &#x3C;/footer&#x3E;
+
+        &#x3C;/section&#x3E;
+
+        &#x3C;!-- Javascript Libraries --&#x3E;
+
+        &#x3C;!-- jQuery --&#x3E;
+        &#x3C;script src=&#x22;vendors/bower_components/jquery/dist/jquery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+
+        &#x3C;!-- Bootstrap --&#x3E;
+        &#x3C;script src=&#x22;vendors/bower_components/bootstrap/dist/js/bootstrap.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+    &#x3C;/body&#x3E;
+&#x3C;/html&#x3E;</code></pre>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/functions.js"></script>
+    </body>
+</html>

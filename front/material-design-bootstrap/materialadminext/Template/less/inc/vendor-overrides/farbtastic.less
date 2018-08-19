@@ -1,0 +1,26 @@
+.color-picker {
+    position: relative;
+    margin-bottom: 30px;
+    
+    & > .input-group {
+        .dropdown-menu {
+            padding: 20px;
+            margin-top: @input-height-base;
+
+        }
+    }
+}
+
+input.color-picker__value {
+    color: @mae-light !important;
+    background: transparent !important;
+}
+
+div.color-picker__value {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}

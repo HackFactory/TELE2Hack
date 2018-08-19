@@ -1,0 +1,79 @@
+.invoice {
+    min-width: 1100px;
+    max-width: 1170px;
+    background-color: @mae-lighter;
+    border-radius: 2px;
+    padding: 30px;
+    color: darken(@text-color, 10%);
+
+    h4, h5 {
+        color: @mae-darker;
+        font-weight: normal;
+    }
+}
+
+.invoice__header {
+    padding: 20px;
+    text-align: center;
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 20px;
+}
+
+.invoice__address {
+    margin-bottom: 50px;
+}
+
+.invoice__attrs {
+    margin: 0 -10px 30px;
+
+    [class*="col-"] {
+        padding: -10px;
+    }
+}
+
+.invoice__attrs__item {
+    background-color: @mae-dark;
+    padding: 20px 25px;
+    border-radius: 3px;
+    text-align: center;
+
+    small {
+        color: @text-color;
+        margin-bottom: 3px;
+        display: block;
+    }
+
+    h2 {
+        margin: 0;
+        line-height: 100%;
+        font-weight: normal;
+    }
+}
+
+.invoice__table {
+    border-color: lighten(@text-color, 25%);
+    margin-bottom: 50px;
+
+    thead,
+    tbody {
+        & > tr {
+            & > td,
+            & > th {
+                border-color: lighten(@text-color, 25%);
+            }
+
+            & > th {
+                color: @mae-darker;
+            }
+        }
+    }
+}
+
+.invoice__footer {
+    text-align: center;
+    margin: 50px 0 20px;
+
+    & > a {
+        color: @text-color;
+    }
+}

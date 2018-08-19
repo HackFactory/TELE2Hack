@@ -1,0 +1,58 @@
+//Style form field
+.form-control {
+    resize: none;
+    border-radius: 0;
+
+    &,
+    &:active,
+    &:focus {
+        box-shadow: none !important;
+    }
+
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    padding: 0;
+}
+
+&[class*=has-] {
+    .form-control {
+        &,
+        &:active,
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    &:not(.form-group--light) {
+        .form-control {
+            border-color: @input-border;
+        }
+    }
+}
+
+
+//Select
+select.form-control {
+    .appearance(none);
+}
+
+
+//Disabled
+.form-control {
+    &[disabled] {
+        .opacity(0.7);
+    }
+}
+
+//IE 9 Placeholder
+.ie9-placeholder {
+    color: @text-color;
+    font-weight: normal;
+}
+
+//Validation
+.form-control-feedback {
+    top: auto;
+    bottom: 0;
+}
